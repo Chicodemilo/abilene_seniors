@@ -1,7 +1,7 @@
 <div id="content_wrapper" class="content_wrapper">
 	<div id="index_title" class="index_title">
 		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-			 width="500px" height="54.25px" viewBox="0 0 677 54.25" enable-background="new 0 0 677 54.25" xml:space="preserve">
+			 width="470px" height="54.25px" viewBox="0 0 677 54.25" enable-background="new 0 0 677 54.25" xml:space="preserve">
 		<g>
 			<path fill="#303D57" d="M72.99,8.394c0.435,0.078,0.907,0.349,1.42,0.814c0.015-0.155,0.062-0.279,0.14-0.373
 				c0.48-0.62,1.194-0.62,2.141,0c-0.637,0-0.907,0.233-0.814,0.698l0.232,1.233l0.326,1.699l3.327,17.708l0.513-2.699l-0.792-1.141

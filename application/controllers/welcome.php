@@ -13,6 +13,7 @@ class Welcome extends CI_Controller {
         $this->form_validation->set_error_delimiters('', '');
 
     }
+
 	public function index()
 	{
 		$this->load->view('header.php');
@@ -20,6 +21,22 @@ class Welcome extends CI_Controller {
         $this->load->view('index_content.php');
 		$this->load->view('footer.php');
 	}
+
+    // public fun
+
+
+    public function search()
+    {
+        $this->load->view('header.php');
+        $this->load->view('name_nav_small.php');
+
+        //get categories here
+        //$this->load->view('search.php');
+
+        //pagination here
+        //$this->load->view('all_resluts.php');
+        $this->load->view('footer.php');
+    }
 }
 
 /* End of file welcome.php */

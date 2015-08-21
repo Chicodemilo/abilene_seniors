@@ -18,6 +18,8 @@
 */
 $config['base_url'] = 'http://localhost/abilene_seniors';
 
+$config['server_root'] = $_SERVER['DOCUMENT_ROOT'];
+
 /*
 |--------------------------------------------------------------------------
 | Index File

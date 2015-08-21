@@ -14,7 +14,7 @@ hr {border: 0;
     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); }
 
 #wrapper    {margin:auto;
-            width: 1200px;
+            width: 1100px;
             height: 400px;}
 
 
@@ -26,9 +26,10 @@ hr {border: 0;
 
 /******************* NAME NAV BAR **********************/
 .top_scroll {margin-top: 5px;
+            margin:auto;
             position: fixed;
             z-index: 20;
-            top: 0px;}
+            top: 5px;}
 
 .brown_bar  {height: 350px;
             width: 100%;
@@ -46,9 +47,10 @@ hr {border: 0;
                         width: 100%;
                         display: block;
                         position: fixed;
-                        margin-top: 50px;
+                        margin-top: 55px;
                         z-index: 10;
                         background: rgba(255,255,255,.7);}
+
 
 .nav_bar    {height: 40px;
             width: 1000px;
@@ -57,8 +59,8 @@ hr {border: 0;
             position: fixed;
             top: 0%;
             left: 50%;
-            margin-left: -500px;
-            margin-top: 50px;
+            margin-left: -450px;
+            margin-top: 55px;
             z-index: 25;}
 
 #home   {width: 105px;}
@@ -95,26 +97,26 @@ hr {border: 0;
 
 .abilene_logo   {margin: auto;
                 position: fixed;
-                top: -5px;
+                top: -2px;
                 left: 50%;
                 margin-left: -500px;
                 z-index: 10;
                 display: block;}
 
 #link_1 path {transition: .8s;}
-#link_1:hover #home path {fill:#1C86EE;}
+#link_1:hover #home path {fill:#EEB422;}
 
 #link_2 path {transition: .8s;}
-#link_2:hover #search path {fill:#1C86EE;}
+#link_2:hover #search path {fill:#EEB422;}
 
 #link_3 path {transition: .8s;}
-#link_3:hover #contact path {fill:#1C86EE;}
+#link_3:hover #contact path {fill:#EEB422;}
 
 #link_4 path {transition: .8s;}
-#link_4:hover #definitions path {fill:#1C86EE;}
+#link_4:hover #definitions path {fill:#EEB422;}
 
 #link_5 path {transition: .8s;}
-#link_5:hover #blog path {fill:#1C86EE;}
+#link_5:hover #blog path {fill:#EEB422;}
 
 
 #seniors_canvas     {box-shadow: 5px 5px 15px #A2A2A2;
@@ -133,37 +135,39 @@ hr {border: 0;
                     position: fixed;
                     top: 0%;
                     left: 50%;
-                    background: rgba(255,250,240, .25);
+                    background: rgba(255,250,240, .15);
                     margin-left: -500px;
                     display: block;}
 
 
 /******************* INDEX PAGE **********************/
-.content_wrapper    {width: 1100px;
+.content_wrapper    {width: 1000px;
                     margin: auto;
                     position: relative;
-                    top: 393px;
+                    top: 400px;
                     z-index: -25;}
 
 .index_title    {position: relative;
                 top:30px;
                 left: 100px;
-                width: 500px;}
+                width: 450px;}
 
 .index_text     {position: relative;
                 top:40px;
                 left: 100px;
-                width: 500px;
+                width: 450px;
                 height: 800px;}
 
 .index_pic      {float: right;
-                height: 455px;
-                width: 350px;
+                height: 400px;
+                width: 308px;
                 position: relative;
                 top: -810px;
                 left: -70px;
                 box-shadow: 5px 5px 10px #D5D5D5;
                 border: 1px solid black;}
+
+
 
 
 

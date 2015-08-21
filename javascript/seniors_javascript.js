@@ -200,8 +200,8 @@ $(document).ready(function() {
  
                      var car3_image = preload.getResult("car3");
                      car3 = new createjs.Bitmap(car3_image);
-                     car3.scaleX = .14;
-                     car3.scaleY = .14;
+                     car3.scaleX = .17;
+                     car3.scaleY = .17;
                      car3.regX = 100;
                      car3.regY = 100;
                      car3.alpha = 1;
@@ -237,8 +237,8 @@ $(document).ready(function() {
                      var start_x_bird, end_x_bird, start_x_flock, end_x_flock, delay_bird, delay_flock, flag_flipper;
  
                      start_x_flock = Math.floor((Math.random() * 999) + 1);
-                     start_x_bird = Math.floor((Math.random() * 999) + 1);
-                     end_x_flock = Math.floor((Math.random() * 1300) + 1);
+                     start_x_bird = Math.floor((Math.random() * 1300) + 1);
+                     end_x_flock = start_x_flock + Math.floor((Math.random() * 300) + 1);
                      end_x_bird = Math.floor((Math.random() * 1300) + 1);
                      delay_flock = Math.floor((Math.random() * 30000) + 1000);
                      delay_bird = Math.floor((Math.random() * 3000) + 1000);
@@ -266,7 +266,7 @@ $(document).ready(function() {
                      var car3_move = new createjs.Tween.get(car3, {loop:true})
                          .wait(12000)
                          .to({alpha:1}, 250)
-                         .to({x:611, y:225, scaleX:.04 ,scaleY:.04}, 24000, createjs.Ease.quartOut)
+                         .to({x:611, y:225, scaleX:.04 ,scaleY:.05}, 24000, createjs.Ease.quartOut)
                          .to({alpha:0},250)
                          .wait(3000);
  
@@ -290,8 +290,7 @@ $(document).ready(function() {
                              .to({alpha:0}, 750)
                              .wait(3000)
                              .to({alpha:1}, 500);
- 
- 
+                    
                      function tickHandler(e){
  
                          if (flock_background.y > 0){
@@ -313,10 +312,17 @@ $(document).ready(function() {
                              flock_background.scaleY = .7;
                              stage.addChild(flock_background);
  
-                             stage.update();
- 
                              start_x_flock = Math.floor((Math.random() * 999) + 1);
-                             end_x_flock = Math.floor((Math.random() * 1200) + 1);
+
+                             var z = (Math.floor((Math.random() * 2) + 1));
+                             if(z = 1){
+                                end_x_flock = start_x_flock - (Math.floor((Math.random() * 300) + 1));
+                                flock_flipper = 2;
+                             }else{
+                                end_x_flock = start_x_flock + (Math.floor((Math.random() * 300) + 1));
+                                flock_flipper = 1;
+                             }
+                             
                              delay_flock = Math.floor((Math.random() * 60000) + 1000);
  
                              var flock = new createjs.Tween.get(flock_background, {loop:false}, {override:true})

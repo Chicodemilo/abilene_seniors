@@ -150,14 +150,14 @@ $(document).ready(function() {
                      var flag1_image = preload.getResult("flag1");
                      flag1 = new createjs.Bitmap(flag1_image);
                      flag1.x = 773;
-                     flag1.y = 5;
+                     flag1.y = 19;
                      stage.addChild(flag1);
                      stage.update();
  
                      var flag2_image = preload.getResult("flag2");
                      flag2 = new createjs.Bitmap(flag2_image);
                      flag2.x = 773;
-                     flag2.y = 5;
+                     flag2.y = 19;
                      flag2.alpha = 0;
                      stage.addChild(flag2);
                      stage.update();
@@ -188,25 +188,25 @@ $(document).ready(function() {
  
                      var truck1_image = preload.getResult("truck1");
                      truck1 = new createjs.Bitmap(truck1_image);
-                     truck1.scaleX = .2;
-                     truck1.scaleY = .2;
+                     truck1.scaleX = .14;
+                     truck1.scaleY = .14;
                      truck1.regX = 100;
                      truck1.regY = 100;
                      truck1.alpha = 1;
-                     truck1.x = 664;
-                     truck1.y = 345;
+                     truck1.x = 654;
+                     truck1.y = 310;
                      stage.addChild(truck1);
                      stage.update();
  
                      var car3_image = preload.getResult("car3");
                      car3 = new createjs.Bitmap(car3_image);
-                     car3.scaleX = .2;
-                     car3.scaleY = .2;
+                     car3.scaleX = .14;
+                     car3.scaleY = .14;
                      car3.regX = 100;
                      car3.regY = 100;
                      car3.alpha = 1;
-                     car3.x = 664;
-                     car3.y = 345;
+                     car3.x = 654;
+                     car3.y = 310;
                      stage.addChild(car3);
                      stage.update();
  
@@ -214,9 +214,9 @@ $(document).ready(function() {
                      flock_background = new createjs.Bitmap(flock_image);
                      flock_background.alpha = 0;
                      flock_background.x = 850;
-                     flock_background.y = 300;
-                     flock_background.scaleX = .75;
-                     flock_background.scaleY = .75;
+                     flock_background.y = 250;
+                     flock_background.scaleX = .7;
+                     flock_background.scaleY = .7;
                      // flock_background.rotation = 30;
                      stage.addChild(flock_background);
                      stage.update();
@@ -225,9 +225,9 @@ $(document).ready(function() {
                      bird_background = new createjs.Bitmap(bird_image);
                      bird_background.alpha = 0;
                      bird_background.x = 100;
-                     bird_background.y = 300;
-                     bird_background.scaleY = .75;
-                     bird_background.scaleX = .75;
+                     bird_background.y = 240;
+                     bird_background.scaleY = .7;
+                     bird_background.scaleX = .7;
                      stage.addChild(bird_background);
                      stage.update();
  
@@ -246,14 +246,14 @@ $(document).ready(function() {
  
                      var car1_move = new createjs.Tween.get(car1, {loop:true})
                          .to({alpha:1}, 250)
-                         .to({x:588, y:350, scaleX:.18 ,scaleY:.18}, 24000, createjs.Ease.quartIn)
+                         .to({x:583, y:310, scaleX:.14 ,scaleY:.14}, 24000, createjs.Ease.quartIn)
                          .to({alpha:0},200)
                          .wait(13000);
  
                      var car2_move = new createjs.Tween.get(car2, {loop:true})
                          .wait(8000)
                          .to({alpha:1}, 250)
-                         .to({x:623, y:350, scaleX:.18 ,scaleY:.18}, 24000, createjs.Ease.quartIn)
+                         .to({x:618, y:310, scaleX:.14 ,scaleY:.14}, 24000, createjs.Ease.quartIn)
                          .to({alpha:0},200);
                          
                      var truck1_move = new createjs.Tween.get(truck1, {loop:true})
@@ -308,9 +308,9 @@ $(document).ready(function() {
                              flock_background = new createjs.Bitmap(flock_image);
                              flock_background.alpha = 0;
                              flock_background.x = 850;
-                             flock_background.y = 300;
-                             flock_background.scaleX = .75;
-                             flock_background.scaleY = .75;
+                             flock_background.y = 240;
+                             flock_background.scaleX = .7;
+                             flock_background.scaleY = .7;
                              stage.addChild(flock_background);
  
                              stage.update();
@@ -323,7 +323,7 @@ $(document).ready(function() {
                                  .to({x:start_x_flock}, 1)
                                  .wait(delay_flock)
                                  .to({alpha:1},250)
-                                 .to({y:-50, x:end_x_flock, scaleX:.4, scaleY:.4}, 20000);
+                                 .to({y:-50, x:end_x_flock, scaleX:.4, scaleY:.4}, 35000);
  
                              stage.update();
                          }
@@ -333,16 +333,16 @@ $(document).ready(function() {
                                  .to({x:start_x_bird}, 1)
                                  .wait(delay_bird)
                                  .to({alpha:1},250)
-                                 .to({y:-50, x:end_x_bird, scaleX:.4, scaleY:.4}, 18000);
+                                 .to({y:-50, x:end_x_bird, scaleX:.4, scaleY:.4}, 30000);
                          
                          }else{
                              var bird_image = preload.getResult("bird");
                              bird_background = new createjs.Bitmap(bird_image);
                              bird_background.alpha = 0;
                              bird_background.x = 850;
-                             bird_background.y = 300;
-                             bird_background.scaleX = .75;
-                             bird_background.scaleY = .75;
+                             bird_background.y = 250;
+                             bird_background.scaleX = .7;
+                             bird_background.scaleY = .7;
                              stage.addChild(bird_background);
                              stage.update();
  

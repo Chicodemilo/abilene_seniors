@@ -35,13 +35,23 @@ hr {border: 0;
             width: 100%;
             display: block;
             position: fixed;
-            margin-top: 30px;
+            margin-top: 0px;
             z-index: -20;
-            background: rgba(222, 208, 196, .5);
-            background: -webkit-linear-gradient(left, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .0)); /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(right, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .0)); /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(right, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .0)); /* For Firefox 3.6 to 15 */
-            background: linear-gradient(to right, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .0)); /* Standard syntax (must be last) */}
+            background: -webkit-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7)); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7)); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7)); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7)); /* Standard syntax (must be last) */}
+
+.brown_bar_small    {height: 170px;
+                    width: 100%;
+                    display: block;
+                    position: fixed;
+                    margin-top: 0px;
+                    z-index: -20;
+                    background: -webkit-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7)); /* For Safari 5.1 to 6.0 */
+                    background: -o-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7)); /* For Opera 11.1 to 12.0 */
+                    background: -moz-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7)); /* For Firefox 3.6 to 15 */
+                    background: linear-gradient(to top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7)); /* Standard syntax (must be last) */}
 
 .nav_bar_background    {height: 40px;
                         width: 100%;
@@ -53,15 +63,29 @@ hr {border: 0;
 
 
 .nav_bar    {height: 40px;
-            width: 1000px;
+            width: 900px;
             display: block;
             margin: auto;
             position: fixed;
             top: 0%;
             left: 50%;
-            margin-left: -450px;
+            margin-left: -400px;
             margin-top: 55px;
             z-index: 25;}
+
+.nav_bar_small    {height: 40px;
+            width: 900px;
+            display: block;
+            margin: auto;
+            position: fixed;
+            top: 0%;
+            left: 50%;
+            margin-left: -340px;
+            margin-top: 55px;
+            z-index: 25;}
+
+
+
 
 #home   {width: 105px;}
 #link_1 {width: 132px;}
@@ -84,15 +108,21 @@ hr {border: 0;
                 margin: auto;}
 .nav_bar td     {height: 36px;}
 
+.nav_bar_small table    {width: 900px;
+                        border-collapse: collapse;
+                        text-align: center;
+                        margin: auto;}
+.nav_bar_small td       {height: 36px;}
+
 .pointer    {float:left;
             display:block;}
 
 .backup_image   {margin: auto;
+                z-index: -15;
                 position: fixed;
-                top: -15;
+                top: 0%;
                 left: 50%;
-                margin-left: -500px;
-                z-index: -10;
+                margin-left: -537px;
                 display: block;}
 
 .abilene_logo   {margin: auto;
@@ -102,6 +132,14 @@ hr {border: 0;
                 margin-left: -500px;
                 z-index: 10;
                 display: block;}
+
+#abilene_logo_small {margin: auto;
+                    position: fixed;
+                    top: -20px;
+                    left: 50%;
+                    margin-left: -550px;
+                    z-index: 10;
+                    display: block;}
 
 #link_1 path {transition: .8s;}
 #link_1:hover #home path {fill:#EEB422;}
@@ -119,32 +157,45 @@ hr {border: 0;
 #link_5:hover #blog path {fill:#EEB422;}
 
 
-#seniors_canvas     {box-shadow: 5px 5px 15px #A2A2A2;
-                    margin: auto;
+#seniors_canvas     {margin: auto;
                     z-index: 0;
                     position: fixed;
                     top: 0%;
                     left: 50%;
-                    margin-left: -500px;
+                    margin-left: -537px;
                     display: block;}
 
-.canvas_fade        {height: 413px;
-                    width: 1000px;
+.canvas_fade        {height: 400px;
+                    width: 1076px;
                     margin: auto;
                     z-index: 1;
                     position: fixed;
                     top: 0%;
                     left: 50%;
-                    background: rgba(255,250,240, .15);
-                    margin-left: -500px;
+                    background: rgba(255,250,240, .2);
+                    margin-left: -537px;
                     display: block;}
+
+.under_canvas_fade      {height: 25px;
+                        width: 1076px;
+                        margin: auto;
+                        z-index: 1;
+                        position: fixed;
+                        top: 390px;
+                        left: 50%;
+                        background: -webkit-linear-gradient(top, rgba(252, 246, 241, .0), rgba(252, 246, 241, 1.0), rgba(252, 246, 241, 1.0)); /* For Safari 5.1 to 6.0 */
+                        background: -o-linear-gradient(top, rgba(252, 246, 241, .0), rgba(252, 246, 241, 1.0), rgba(252, 246, 241, 1.0)); /* For Opera 11.1 to 12.0 */
+                        background: -moz-linear-gradient(top, rgba(252, 246, 241, .0), rgba(252, 246, 241, 1.0), rgba(252, 246, 241, 1.0)); /* For Firefox 3.6 to 15 */
+                        background: linear-gradient(to top, rgba(252, 246, 241, .0), rgba(252, 246, 241, 1.0), rgba(252, 246, 241, 1.0)); /* Standard syntax (must be last) */
+                        margin-left: -537px;
+                        display: block;}
 
 
 /******************* INDEX PAGE **********************/
 .content_wrapper    {width: 1000px;
                     margin: auto;
                     position: relative;
-                    top: 400px;
+                    top: 370px;
                     z-index: -25;}
 
 .index_title    {position: relative;
@@ -156,13 +207,13 @@ hr {border: 0;
                 top:40px;
                 left: 100px;
                 width: 450px;
-                height: 800px;}
+                height: 700px;}
 
 .index_pic      {float: right;
                 height: 400px;
                 width: 308px;
                 position: relative;
-                top: -810px;
+                top: -710px;
                 left: -70px;
                 box-shadow: 5px 5px 10px #D5D5D5;
                 border: 1px solid black;}

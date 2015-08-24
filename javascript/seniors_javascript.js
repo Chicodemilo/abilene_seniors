@@ -101,7 +101,7 @@ $(document).ready(function() {
  
              function setupManifest() {
                  manifest = [
-                     {src:  "images/animation/backgroundB.jpg",
+                     {src:  "images/animation/backgroundC.jpg",
                      id: "background"},
                      {src: "images/animation/flock.png",
                      id: "flock"},
@@ -119,8 +119,8 @@ $(document).ready(function() {
                      id:"car2"},
                      {src:"images/animation/car3.png",
                      id:"car3"},
-                     {src:"images/animation/logo.png",
-                     id:"logo"}
+                     {src:"images/animation/bridgeC.png",
+                     id:"bridge"}
                  ];
              }
  
@@ -137,8 +137,8 @@ $(document).ready(function() {
  
              function handleFileLoad(event) {
                  console.log("A file has loaded of type: " + event.item.type);
-                 if(event.item.id == "logo"){
-                     console.log("logo is loaded");
+                 if(event.item.id == "bridge"){
+                     console.log("bridge is loaded");
                      var abilene_image = preload.getResult("background");
                      var abilene_background = new createjs.Bitmap(abilene_image);
                      abilene_background.x = 0;
@@ -149,14 +149,14 @@ $(document).ready(function() {
  
                      var flag1_image = preload.getResult("flag1");
                      flag1 = new createjs.Bitmap(flag1_image);
-                     flag1.x = 773;
+                     flag1.x = 833;
                      flag1.y = 19;
                      stage.addChild(flag1);
                      stage.update();
  
                      var flag2_image = preload.getResult("flag2");
                      flag2 = new createjs.Bitmap(flag2_image);
-                     flag2.x = 773;
+                     flag2.x = 833;
                      flag2.y = 19;
                      flag2.alpha = 0;
                      stage.addChild(flag2);
@@ -164,49 +164,49 @@ $(document).ready(function() {
  
                      var car1_image = preload.getResult("car1");
                      car1 = new createjs.Bitmap(car1_image);
-                     car1.scaleX = .04;
-                     car1.scaleY = .04;
+                     car1.scaleX = .03;
+                     car1.scaleY = .03;
                      car1.regX = 100;
                      car1.regY = 100;
                      car1.alpha = 0;
-                     car1.x = 599;
-                     car1.y = 225;
+                     car1.x = 647;
+                     car1.y = 240;
                      stage.addChild(car1);
                      stage.update();
  
                      var car2_image = preload.getResult("car2");
                      car2 = new createjs.Bitmap(car2_image);
-                     car2.scaleX = .04;
-                     car2.scaleY = .04;
+                     car2.scaleX = .03;
+                     car2.scaleY = .03;
                      car2.regX = 100;
                      car2.regY = 100;
                      car2.alpha = 0;
-                     car2.x = 604;
-                     car2.y = 225;
+                     car2.x = 650;
+                     car2.y = 240;
                      stage.addChild(car2);
                      stage.update();
  
                      var truck1_image = preload.getResult("truck1");
                      truck1 = new createjs.Bitmap(truck1_image);
-                     truck1.scaleX = .14;
-                     truck1.scaleY = .14;
+                     truck1.scaleX = .24;
+                     truck1.scaleY = .24;
                      truck1.regX = 100;
                      truck1.regY = 100;
                      truck1.alpha = 1;
-                     truck1.x = 654;
-                     truck1.y = 310;
+                     truck1.x = 755;
+                     truck1.y = 402;
                      stage.addChild(truck1);
                      stage.update();
  
                      var car3_image = preload.getResult("car3");
                      car3 = new createjs.Bitmap(car3_image);
-                     car3.scaleX = .17;
-                     car3.scaleY = .17;
+                     car3.scaleX = .24;
+                     car3.scaleY = .24;
                      car3.regX = 100;
                      car3.regY = 100;
                      car3.alpha = 1;
-                     car3.x = 654;
-                     car3.y = 310;
+                     car3.x = 755;
+                     car3.y = 402;
                      stage.addChild(car3);
                      stage.update();
  
@@ -214,7 +214,7 @@ $(document).ready(function() {
                      flock_background = new createjs.Bitmap(flock_image);
                      flock_background.alpha = 0;
                      flock_background.x = 850;
-                     flock_background.y = 250;
+                     flock_background.y = 280;
                      flock_background.scaleX = .7;
                      flock_background.scaleY = .7;
                      // flock_background.rotation = 30;
@@ -225,10 +225,15 @@ $(document).ready(function() {
                      bird_background = new createjs.Bitmap(bird_image);
                      bird_background.alpha = 0;
                      bird_background.x = 100;
-                     bird_background.y = 240;
+                     bird_background.y = 280;
                      bird_background.scaleY = .7;
                      bird_background.scaleX = .7;
                      stage.addChild(bird_background);
+                     stage.update();
+
+                     var bridge_image = preload.getResult("bridge");
+                     bridge_background = new createjs.Bitmap(bridge_image);
+                     stage.addChild(bridge_background);
                      stage.update();
  
                      createjs.Ticker.setFPS(60);
@@ -236,37 +241,37 @@ $(document).ready(function() {
  
                      var start_x_bird, end_x_bird, start_x_flock, end_x_flock, delay_bird, delay_flock, flag_flipper;
  
-                     start_x_flock = Math.floor((Math.random() * 999) + 1);
-                     start_x_bird = Math.floor((Math.random() * 1300) + 1);
+                     start_x_flock = Math.floor((Math.random() * 1100) + 1);
+                     start_x_bird = Math.floor((Math.random() * 1100) + 1);
                      end_x_flock = start_x_flock + Math.floor((Math.random() * 300) + 1);
                      end_x_bird = Math.floor((Math.random() * 1300) + 1);
-                     delay_flock = Math.floor((Math.random() * 30000) + 1000);
+                     delay_flock = Math.floor((Math.random() * 25000) + 1000);
                      delay_bird = Math.floor((Math.random() * 3000) + 1000);
  
  
                      var car1_move = new createjs.Tween.get(car1, {loop:true})
                          .to({alpha:1}, 250)
-                         .to({x:583, y:310, scaleX:.14 ,scaleY:.14}, 24000, createjs.Ease.quartIn)
+                         .to({x:617, y:400, scaleX:.24 ,scaleY:.24}, 33000, createjs.Ease.quartIn)
                          .to({alpha:0},200)
                          .wait(13000);
  
                      var car2_move = new createjs.Tween.get(car2, {loop:true})
                          .wait(8000)
                          .to({alpha:1}, 250)
-                         .to({x:618, y:310, scaleX:.14 ,scaleY:.14}, 24000, createjs.Ease.quartIn)
+                         .to({x:672, y:400, scaleX:.24 ,scaleY:.24}, 24000, createjs.Ease.quartIn)
                          .to({alpha:0},200);
                          
                      var truck1_move = new createjs.Tween.get(truck1, {loop:true})
                          .wait(3000)
                          .to({alpha:1}, 250)
-                         .to({x:611, y:225, scaleX:.04 ,scaleY:.04}, 24000, createjs.Ease.quartOut)
+                         .to({x:654, y:240, scaleX:.03 ,scaleY:.04}, 33000, createjs.Ease.quartOut)
                          .to({alpha:0},250)
                          .wait(12000);
                          
                      var car3_move = new createjs.Tween.get(car3, {loop:true})
                          .wait(12000)
                          .to({alpha:1}, 250)
-                         .to({x:611, y:225, scaleX:.04 ,scaleY:.05}, 24000, createjs.Ease.quartOut)
+                         .to({x:654, y:240, scaleX:.03 ,scaleY:.04}, 33000, createjs.Ease.quartOut)
                          .to({alpha:0},250)
                          .wait(3000);
  
@@ -307,12 +312,12 @@ $(document).ready(function() {
                              flock_background = new createjs.Bitmap(flock_image);
                              flock_background.alpha = 0;
                              flock_background.x = 850;
-                             flock_background.y = 240;
+                             flock_background.y = 280;
                              flock_background.scaleX = .7;
                              flock_background.scaleY = .7;
                              stage.addChild(flock_background);
  
-                             start_x_flock = Math.floor((Math.random() * 999) + 1);
+                             start_x_flock = Math.floor((Math.random() * 1100) + 1);
 
                              var z = (Math.floor((Math.random() * 2) + 1));
                              if(z = 1){
@@ -323,7 +328,7 @@ $(document).ready(function() {
                                 flock_flipper = 1;
                              }
                              
-                             delay_flock = Math.floor((Math.random() * 60000) + 1000);
+                             delay_flock = Math.floor((Math.random() * 43000) + 1000);
  
                              var flock = new createjs.Tween.get(flock_background, {loop:false}, {override:true})
                                  .to({x:start_x_flock}, 1)
@@ -346,7 +351,7 @@ $(document).ready(function() {
                              bird_background = new createjs.Bitmap(bird_image);
                              bird_background.alpha = 0;
                              bird_background.x = 850;
-                             bird_background.y = 250;
+                             bird_background.y = 280;
                              bird_background.scaleX = .7;
                              bird_background.scaleY = .7;
                              stage.addChild(bird_background);

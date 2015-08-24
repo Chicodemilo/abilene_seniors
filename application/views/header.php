@@ -23,7 +23,4 @@
 </head>
 <body onload="init();">
 
-<div class="brown_bar"></div>
-<div class="nav_bar_background"></div>
-<div id="wrapper">
     

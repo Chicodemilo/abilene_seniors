@@ -22,21 +22,57 @@ class Welcome extends CI_Controller {
 		$this->load->view('footer.php');
 	}
 
-    // public fun
-
 
     public function search()
     {
         $this->load->view('header.php');
         $this->load->view('name_nav_small.php');
 
-        //get categories here
-        //$this->load->view('search.php');
+        $this->load->model('search', 'categories');
+        $data['categories'] = $this->categories->get_categories_search_page();
 
-        //pagination here
-        //$this->load->view('all_resluts.php');
+        $this->load->library('pagination');
+        $config['base_url'] = base_url().'welcome/search';
+        $config['total_rows'] = $this->db->get('resources')->num_rows();
+        $config['per_page'] = 30;
+        $config['num_links'] = $config['total_rows'] / $config['per_page'];
+        $config['full_tag_open'] = '<div id="pagination" class="pagination_numbers">';
+        $config['full_tag_close'] = '</div>';
+
+        $this->pagination->initialize($config);
+        $this->db->order_by('categoryone', 'asc');
+        $data['resources'] = $this->db->get('resources', $config['per_page'], $this->uri->segment(3));
+
+        $this->load->view('search.php', $data);
         $this->load->view('footer.php');
     }
+
+    
+    public function contact()
+    {
+        $this->load->view('header.php');
+        $this->load->view('name_nav_small.php');
+        $this->load->view('footer.php');
+    }
+    
+
+    public function definitions()
+    {
+        $this->load->view('header.php');
+        $this->load->view('name_nav_small.php');
+        $this->load->view('footer.php');
+    }
+
+
+    public function blog()
+    {
+        $this->load->view('header.php');
+        $this->load->view('name_nav_small.php');
+        $this->load->view('footer.php');
+    }
+
+
+
 }
 
 /* End of file welcome.php */

@@ -1,6 +1,24 @@
 // JQuery ****************************************************************************
 $(document).ready(function() {
-    
+
+    $("#search_button").hover(function(){
+        $(this).toggleClass('input_hover');
+    });
+
+    $("#need").hover(function(){
+        $(this).toggleClass('search_bar_hover');
+    });
+
+    $(".content").mCustomScrollbar({scrollButtons:{ enable: true }});
+
+    function result_resize() {
+      var bodyheight = $(window).height();
+      $("#results").height(bodyheight - 360);
+    }
+
+    result_resize();
+    $(window).resize(result_resize);
+
     function point_at(pointer_num){
         $('#pointer_' + pointer_num).animate({  borderSpacing: -10 }, {
             step: function(now) {
@@ -245,8 +263,8 @@ $(document).ready(function() {
                      start_x_bird = Math.floor((Math.random() * 1100) + 1);
                      end_x_flock = start_x_flock + Math.floor((Math.random() * 300) + 1);
                      end_x_bird = Math.floor((Math.random() * 1300) + 1);
-                     delay_flock = Math.floor((Math.random() * 25000) + 1000);
-                     delay_bird = Math.floor((Math.random() * 3000) + 1000);
+                     delay_flock = Math.floor((Math.random() * 1000) + 1000);
+                     delay_bird = Math.floor((Math.random() * 1000) + 1000);
  
  
                      var car1_move = new createjs.Tween.get(car1, {loop:true})
@@ -256,10 +274,11 @@ $(document).ready(function() {
                          .wait(13000);
  
                      var car2_move = new createjs.Tween.get(car2, {loop:true})
-                         .wait(8000)
+                         .wait(0)
                          .to({alpha:1}, 250)
                          .to({x:672, y:400, scaleX:.24 ,scaleY:.24}, 24000, createjs.Ease.quartIn)
-                         .to({alpha:0},200);
+                         .to({alpha:0},200)
+                         .wait(8000);
                          
                      var truck1_move = new createjs.Tween.get(truck1, {loop:true})
                          .wait(3000)
@@ -285,15 +304,15 @@ $(document).ready(function() {
                      //     stage.update(); 
  
                      var flip = new createjs.Tween.get(flag2, {loop:true})
-                             .wait(5000)
+                             .wait(2000)
                              .to({alpha:1}, 750)
-                             .wait(3000)
+                             .wait(4000)
                              .to({alpha:0}, 500);
  
                      var flip2 = new createjs.Tween.get(flag1, {loop:true})
-                             .wait(5000)
+                             .wait(2000)
                              .to({alpha:0}, 750)
-                             .wait(3000)
+                             .wait(4000)
                              .to({alpha:1}, 500);
                     
                      function tickHandler(e){

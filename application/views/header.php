@@ -14,6 +14,8 @@
     <script src="https://code.createjs.com/createjs-2015.05.21.min.js"></script>
    <script type="text/javascript" src="<?php echo base_url();?>javascript/seniors_javascript.js"></script>
     <link type="text/css" rel="stylesheet" href="<?php echo base_url();?>css/abilene_seniors_main.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css" />
+    <script src="<?php echo base_url();?>malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
     <script>
         // Google Analytics
     </script>

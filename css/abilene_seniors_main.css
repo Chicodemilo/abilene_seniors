@@ -4,7 +4,8 @@ textarea {resize: none;}
 body {background-color: rgb(252, 246, 241);
     margin: auto;
     width: 100%;
-    height: 100%;}
+    height: 100%;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;}
 
 hr {border: 0;
     height: 1px;
@@ -17,9 +18,10 @@ hr {border: 0;
             width: 1100px;
             height: 400px;}
 
+.med_title  {font-size: 1.2em;
+            letter-spacing: .13em;}
 
-
-
+a:link {text-decoration: none;}
 
 
 
@@ -42,16 +44,16 @@ hr {border: 0;
             background: -moz-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7)); /* For Firefox 3.6 to 15 */
             background: linear-gradient(to top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7)); /* Standard syntax (must be last) */}
 
-.brown_bar_small    {height: 170px;
+.brown_bar_small    {height: 150px;
                     width: 100%;
                     display: block;
                     position: fixed;
                     margin-top: 0px;
                     z-index: -20;
-                    background: -webkit-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7)); /* For Safari 5.1 to 6.0 */
-                    background: -o-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7)); /* For Opera 11.1 to 12.0 */
-                    background: -moz-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7)); /* For Firefox 3.6 to 15 */
-                    background: linear-gradient(to top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7)); /* Standard syntax (must be last) */}
+                    background: -webkit-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .9), rgba(222, 208, 196, 1), rgba(222, 208, 196, 1)); /* For Safari 5.1 to 6.0 */
+                    background: -o-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .9), rgba(222, 208, 196, 1), rgba(222, 208, 196, 1)); /* For Opera 11.1 to 12.0 */
+                    background: -moz-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .9), rgba(222, 208, 196, 1), rgba(222, 208, 196, 1)); /* For Firefox 3.6 to 15 */
+                    background: linear-gradient(to top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .9), rgba(222, 208, 196, 1), rgba(222, 208, 196, 1)); /* Standard syntax (must be last) */}
 
 .nav_bar_background    {height: 40px;
                         width: 100%;
@@ -186,7 +188,7 @@ hr {border: 0;
                         background: -webkit-linear-gradient(top, rgba(252, 246, 241, .0), rgba(252, 246, 241, 1.0), rgba(252, 246, 241, 1.0)); /* For Safari 5.1 to 6.0 */
                         background: -o-linear-gradient(top, rgba(252, 246, 241, .0), rgba(252, 246, 241, 1.0), rgba(252, 246, 241, 1.0)); /* For Opera 11.1 to 12.0 */
                         background: -moz-linear-gradient(top, rgba(252, 246, 241, .0), rgba(252, 246, 241, 1.0), rgba(252, 246, 241, 1.0)); /* For Firefox 3.6 to 15 */
-                        background: linear-gradient(to top, rgba(252, 246, 241, .0), rgba(252, 246, 241, 1.0), rgba(252, 246, 241, 1.0)); /* Standard syntax (must be last) */
+                        background: linear-gradient(top, rgba(252, 246, 241, .0), rgba(252, 246, 241, 1.0), rgba(252, 246, 241, 1.0)); /* Standard syntax (must be last) */
                         margin-left: -537px;
                         display: block;}
 
@@ -207,20 +209,125 @@ hr {border: 0;
                 top:40px;
                 left: 100px;
                 width: 450px;
-                height: 700px;}
+                height: 800px;}
 
 .index_pic      {float: right;
                 height: 400px;
                 width: 308px;
                 position: relative;
-                top: -710px;
+                top: -810px;
                 left: -70px;
                 box-shadow: 5px 5px 10px #D5D5D5;
                 border: 1px solid black;}
 
+/******************* SEARCH PAGE **********************/
+.content_wrapper_search {width: 1000px;
+                        margin: auto;
+                        position: relative;
+                        top: 150px;
+                        z-index: 30;}
+
+.search_bar {margin: auto;
+            width: 970px;
+            background: -webkit-linear-gradient(left, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .0)); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(left, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .0)); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(left, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .0)); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to left, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .0)); /* Standard syntax (must be last) */
+            padding: 15px;
+            position: fixed;
+            top:150px;}
 
 
+.search_bar_no_hover   {width: 400px;
+                       padding: 5px;
+                       font-size: 16px;
+                       border-radius: 5;
+                       height: 45px;
+                       background: #FFF;
+                       font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                       letter-spacing: .1em;
+                       border: 1px solid gray;
+                       box-shadow: 2px 2px 4px #BBB;
+                       margin-right: 10px;
+                       cursor: pointer;}
 
+.search_bar_hover      {width: 400px;
+                       padding: 5px;
+                       font-size: 16px;
+                       border-radius: 5;
+                       height: 45px;
+                       background: #f0fcff;
+                       font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                       letter-spacing: .1em;
+                       border: 2px solid gray;
+                       box-shadow: 2px 2px 4px #BBB;
+                       margin-right: 10px;
+                       cursor: pointer;}
+
+
+.input_no_hover                  { border-radius: 5px;
+                                border: 1px solid gray;
+                                width: 80px;
+                                height:45px;
+                                background: #fff;
+                                font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+                                font-size: 16px;
+                                box-shadow: 2px 2px 4px #BBB;
+                                cursor: pointer;}
+
+.input_hover                    { border-radius: 5px;
+                                border: 2px solid gray;
+                                width: 80px;
+                                height:45px;
+                                background: #f0fcff;
+                                font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+                                font-size: 16px;
+                                box-shadow: 2px 2px 4px #BBB;
+                                background: 
+                                cursor: pointer;}
+
+#results {margin: auto;
+        overflow-x:none;
+        overflow-y: scroll;
+        border: 1px solid rgb(180, 180, 180);
+        width: 970px;
+        display: block;
+        position: fixed;
+        top: 260px;
+        padding: 15px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 30px rgb(210,180,140);}
+
+#results table {width: 100%;
+                border-collapse: collapse;}
+
+#results th     {background: #eee;
+                border-bottom: 5px solid white;
+                padding: 5px;
+                font-weight: normal;
+                margin-bottom: 3px;
+                font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                letter-spacing: .2em;
+                text-align: left;}
+
+#results td      {border-bottom: 5px solid white;
+                font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                font-size: .8em;
+                padding: 8px;}
+
+.phone   {width: 20%;}
+.provider {width: 40%;}
+
+.row1 {background: #f0fcff;}
+.row2   {background: #fcfcfc;}
+
+.pagination_numbers {margin: auto;
+                    height: 20px;
+                    margin-left: 30px;
+                    display: block;
+                    position: fixed;
+                    bottom: 40px;}
 
 
 

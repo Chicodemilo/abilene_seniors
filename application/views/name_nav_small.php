@@ -239,7 +239,7 @@
 </svg>
 
 </div>
-</div> <!-- End Top Scroll -->
+</div> <!-- ****************************************************************************************************************************** End Top Scroll -->
 <div id="abilene_logo_small" class="abilene_logo_small">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="1100px" height="416px" viewBox="0 0 1100 416" enable-background="new 0 0 1100 416" xml:space="preserve">
@@ -727,12 +727,12 @@
 	c0.346,0.827,1.162,1.405,2.113,1.405c0.949,0,1.766-0.578,2.111-1.405h78.193c9.02,0,15.646-0.522,18.779-7.315
 	C1070.151,148.467,1069.733,143.382,1067.437,139.801z"/>
 </svg>
-</div> <!-- end abilene_logo_small -->
+</div> <!-- ****************************************************************************************************************************** End abilene_logo_small -->
 <div id="nav_bar_small" class="nav_bar_small">
 
 	<table>
 		<tr>
-			<td><div id="link_1">
+			<td><div id="link_1"><a href="<?php echo base_url() ?>">
 					<div id="pointer_1" class="pointer">
 						<svg version="1.1" id="pointer_1_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 width="27px" height="37px" viewBox="0 0 27 37" enable-background="new 0 0 27 37" xml:space="preserve">
@@ -817,10 +817,11 @@
 					</g>
 					</svg>
 					</div>
-				</div>
+				</a>
+				</div><!-- ****************************************************************************************************************************** End of Link 1 -->
 			</td>
 			<td>
-				<div id="link_2">
+				<div id="link_2"><a href="<?php echo base_url() ?>welcome/search">
 					<div id="pointer_2" class="pointer">
 						<svg version="1.1" id="pointer_2_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 width="27px" height="37px" viewBox="0 0 27 37" enable-background="new 0 0 27 37" xml:space="preserve">
@@ -914,9 +915,10 @@
 					</svg>
 						
 					</div>
-				</div>
+				</a>
+				</div><!-- ****************************************************************************************************************************** End of Link 2 -->
 			</td>
-			<td><div id="link_3">
+			<td><div id="link_3"><a href="<?php echo base_url()?>welcome/contact">
 					<div id="pointer_3" class="pointer">
 						<svg version="1.1" id="pointer_3_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 width="27px" height="37px" viewBox="0 0 27 37" enable-background="new 0 0 27 37" xml:space="preserve">
@@ -1028,9 +1030,10 @@
 						</g>
 						</svg>
 					</div>
-				</div>
+				</a>	
+				</div><!-- ****************************************************************************************************************************** End of Link 3 -->
 			</td>
-			<td><div id="link_4">
+			<td><div id="link_4"><a href="<?php echo base_url() ?>welcome/definitions">
 					<div id="pointer_4" class="pointer">
 						<svg version="1.1" id="pointer_4_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 width="27px" height="37px" viewBox="0 0 27 37" enable-background="new 0 0 27 37" xml:space="preserve">
@@ -1177,9 +1180,10 @@
 						</g>
 						</svg>
 					</div>
-				</div>
+				</a>
+				</div><!-- ****************************************************************************************************************************** End of Link 4 -->
 			</td>
-			<td><div id="link_5">
+			<td><div id="link_5"><a href="<?php echo base_url()?>welcome/blog">
 					<div id="pointer_5" class="pointer">
 						<svg version="1.1" id="pointer_5_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 width="27px" height="37px" viewBox="0 0 27 37" enable-background="new 0 0 27 37" xml:space="preserve">
@@ -1267,7 +1271,8 @@
 								l-0.096-0.076l-0.705-0.725c-0.037-0.038-0.037-0.083,0-0.133l0.801-0.801V13.694z"/>
 						</g>
 					</div>
-				</div>
+				</a>
+				</div><!-- ****************************************************************************************************************************** End of Link 5 -->
 			</td>
 		</tr>
 	</table>

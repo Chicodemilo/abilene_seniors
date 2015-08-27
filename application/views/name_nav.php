@@ -8,7 +8,7 @@
 <div id="canvas_fade" class="canvas_fade"></div>
 <div id="under_canvas_fade" class="under_canvas_fade"></div>
 <div class="top_scroll">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="top_scroll_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="1100px" height="416px" viewBox="0 0 1100 416" enable-background="new 0 0 1100 416" xml:space="preserve">
 <path fill="#262626" d="M550.474,32.431c1.879,2.927,4.762,4.538,8.129,4.538c0.006,0,0.014,0,0.021,0
 	c0.093,0,0.177-0.011,0.266-0.017c0.014,0.004,0.024,0.012,0.037,0.014c0.068,0.004,0.827,0.053,2.017-0.163
@@ -244,9 +244,9 @@
 </svg>
 
 </div>
-</div> <!-- End Top Scroll -->
+</div> <!-- ****************************************************************************************************************************** End Top Scroll -->
 <div id="abilene_logo" class="abilene_logo">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="abilene_logo_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="1100px" height="400px" viewBox="0 0 1100 400" enable-background="new 0 0 1100 400" xml:space="preserve">
 <pattern  width="72" height="72" patternUnits="userSpaceOnUse" id="_x31_0_lpi_40_x25_" viewBox="20 -72 72 72" overflow="visible">
 	<g>
@@ -712,11 +712,11 @@
 </g>
 </svg>
 
-</div> <!-- End Abilene Logo -->
+</div> <!-- ****************************************************************************************************************************** End Abilene Logo -->
 <div id="nav_bar" class="nav_bar">
 	<table>
 		<tr>
-			<td><div id="link_1">
+			<td><div id="link_1"><a href="<?php echo base_url() ?>">
 					<div id="pointer_1" class="pointer">
 						<svg version="1.1" id="pointer_1_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 width="27px" height="37px" viewBox="0 0 27 37" enable-background="new 0 0 27 37" xml:space="preserve">
@@ -801,10 +801,11 @@
 					</g>
 					</svg>
 					</div>
-				</div>
+				</a>
+				</div> <!-- ****************************************************************************************************************************** End of Link 1 Div -->
 			</td>
 			<td>
-				<div id="link_2">
+				<div id="link_2"><a href="<?php echo base_url() ?>welcome/search">
 					<div id="pointer_2" class="pointer">
 						<svg version="1.1" id="pointer_2_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 width="27px" height="37px" viewBox="0 0 27 37" enable-background="new 0 0 27 37" xml:space="preserve">
@@ -898,9 +899,10 @@
 					</svg>
 						
 					</div>
-				</div>
+				</a>
+				</div><!-- ****************************************************************************************************************************** End of Link 2 Div -->
 			</td>
-			<td><div id="link_3">
+			<td><div id="link_3"><a href="<?php echo base_url() ?>welcome/contact">
 					<div id="pointer_3" class="pointer">
 						<svg version="1.1" id="pointer_3_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 width="27px" height="37px" viewBox="0 0 27 37" enable-background="new 0 0 27 37" xml:space="preserve">
@@ -1012,10 +1014,11 @@
 						</g>
 						</svg>
 					</div>
-				</div>
+				</a>
+				</div><!-- ****************************************************************************************************************************** End of Link 3 -->
 			</td>
 			<td><div id="link_4">
-					<div id="pointer_4" class="pointer">
+					<div id="pointer_4" class="pointer"><a href="<?php echo base_url() ?>welcome/definitions">
 						<svg version="1.1" id="pointer_4_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 width="27px" height="37px" viewBox="0 0 27 37" enable-background="new 0 0 27 37" xml:space="preserve">
 						<path fill="#3F2308" d="M12.227,4.668c0,0.662,0.439,1.215,1.041,1.399v4.252c-0.534,1.015-2.319,4.251-3.445,4.365
@@ -1161,10 +1164,11 @@
 						</g>
 						</svg>
 					</div>
-				</div>
+				</a>
+				</div><!-- ****************************************************************************************************************************** End of Link 4 -->
 			</td>
 			<td><div id="link_5">
-					<div id="pointer_5" class="pointer">
+					<div id="pointer_5" class="pointer"><a href="<?php echo base_url() ?>welcome/blog">
 						<svg version="1.1" id="pointer_5_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 width="27px" height="37px" viewBox="0 0 27 37" enable-background="new 0 0 27 37" xml:space="preserve">
 						<path fill="#3F2308" d="M12.227,4.668c0,0.662,0.439,1.215,1.041,1.399v4.252c-0.534,1.015-2.319,4.251-3.445,4.365
@@ -1251,7 +1255,8 @@
 								l-0.096-0.076l-0.705-0.725c-0.037-0.038-0.037-0.083,0-0.133l0.801-0.801V13.694z"/>
 						</g>
 					</div>
-				</div>
+				</a>
+				</div><!-- ****************************************************************************************************************************** End of Link 5 -->
 			</td>
 		</tr>
 	</table>

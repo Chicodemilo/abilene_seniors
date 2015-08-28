@@ -13,7 +13,7 @@ $(document).ready(function() {
 
     function result_resize() {
       var bodyheight = $(window).height();
-      $("#results").height(bodyheight - 360);
+      $("#results").height(bodyheight - 345);
     }
 
     result_resize();
@@ -69,35 +69,35 @@ $(document).ready(function() {
         point_at(1);
     });
     $('#link_1').mouseleave(function() {
-        point_away(1)
+        point_away(1);
     });
 
     $('#link_2').mouseenter(function() {
         point_at(2);
     });
     $('#link_2').mouseleave(function() {
-        point_away(2)
+        point_away(2);
     });
 
     $('#link_3').mouseenter(function() {
         point_at(3);
     });
     $('#link_3').mouseleave(function() {
-        point_away(3)
+        point_away(3);
     });
     
     $('#link_4').mouseenter(function() {
         point_at(4);
     });
     $('#link_4').mouseleave(function() {
-        point_away(4)
+        point_away(4);
     });
 
     $('#link_5').mouseenter(function() {
         point_at(5);
     });
     $('#link_5').mouseleave(function() {
-        point_away(5)
+        point_away(5);
     });
     
 });

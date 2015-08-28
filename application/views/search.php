@@ -1,6 +1,6 @@
 <div class="content_wrapper_search">
 	<div id="search_bar" class="search_bar">
-			<form action="<?php echo base_url()?>welcome/results">
+			<form action="<?php echo base_url()?>welcome/results" method="get">
 				<span class="med_title">Find The Service You Need:</span>
 				<select name="need" id="need" class="search_bar_no_hover">
 					<option value="Please Select A Category">Select a Service</option>

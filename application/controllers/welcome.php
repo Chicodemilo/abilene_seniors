@@ -14,6 +14,8 @@ class Welcome extends CI_Controller {
 
     }
 
+
+
 	public function index()
 	{
 		$this->load->view('header.php');
@@ -21,6 +23,7 @@ class Welcome extends CI_Controller {
         $this->load->view('index_content.php');
 		$this->load->view('footer.php');
 	}
+
 
 
     public function search()
@@ -45,6 +48,56 @@ class Welcome extends CI_Controller {
 
         $this->load->view('search.php', $data);
         $this->load->view('footer.php');
+    }
+
+
+
+    public function results(){
+        $services = $this->input->get('need', TRUE);
+        $this->load->model('search', 'resources');
+        $resutls = $this->resources->find($services);
+        $categories = $this->resources->get_categories_search_page();
+        $data['resources'] = $resutls;
+        $data['categories'] = $categories;
+        $data['count'] = count ($resutls);
+        $data['service'] = $services;
+
+        if($services === 'Please Select A Category'){
+            redirect(base_url().'welcome/search');
+        }
+
+        if($data['count']<1){
+            $this->load->view('header.php');
+            $this->load->view('name_nav_small.php');
+            $this->load->view('no_resource.php');
+            $this->load->view('footer.php');
+        }else{
+            $this->load->view('header.php');
+            $this->load->view('name_nav_small.php');
+            $this->load->view('results_view', $data);
+            $this->load->view('footer.php');
+        }
+    }
+
+
+
+
+    public function resource($id){
+        $this->load->model('search', 'resource');
+        $data['resource'] = $this->resource->find_resource($id);
+        $count = count ($data['resource']);
+
+        if($count < 1){
+            $this->load->view('header.php');
+            $this->load->view('name_nav_small.php');
+            $this->load->view('no_resource.php');
+            $this->load->view('footer.php');
+        }else{
+            $this->load->view('header.php');
+            $this->load->view('name_nav_small.php');
+            $this->load->view('resource_page', $data);
+            $this->load->view('footer.php');
+        }
     }
 
     

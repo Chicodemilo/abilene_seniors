@@ -22,8 +22,8 @@ class Welcome extends CI_Controller {
 		$this->load->view('name_nav.php');
         $this->load->view('index_content.php');
 		$this->load->view('footer.php');
+        
 	}
-
 
 
     public function search()
@@ -77,7 +77,7 @@ class Welcome extends CI_Controller {
             $this->load->view('results_view', $data);
             $this->load->view('footer.php');
         }
-    }
+    }//Testing git Gutter
 
 
 
@@ -102,7 +102,7 @@ class Welcome extends CI_Controller {
 
     
     public function contact()
-    {
+    {   //This is a change for gitgutter
         $this->load->view('header.php');
         $this->load->view('name_nav_small.php');
         $this->load->view('footer.php');

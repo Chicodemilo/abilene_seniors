@@ -17,6 +17,7 @@ $(document).ready(function() {
     }
 
     result_resize();
+
     $(window).resize(result_resize);
 
     function point_at(pointer_num){

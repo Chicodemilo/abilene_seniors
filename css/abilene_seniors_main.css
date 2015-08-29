@@ -25,7 +25,6 @@ a:link {text-decoration: none;}
 
 
 
-/*Git Test*/∏
 /******************* NAME NAV BAR **********************/
 .top_scroll {margin-top: 5px;
             margin:auto;
@@ -319,7 +318,7 @@ a:link {text-decoration: none;}
 .provider {width: 40%;}
 
 .row1 {background: #f0fcff;}
-.row2   {background: #fcfcfc;}
+.row2   {background: #D3EDFD;}
 
 .pagination_numbers {margin: auto;
                     height: 20px;
@@ -336,7 +335,12 @@ a:link {text-decoration: none;}
              letter-spacing: .13em;
              padding: 15px 0px 15px 0px;}
 
-
+/******************* RESOURCE PAGE **********************/
+.found_resource {box-shadow: 3px 3px 5px #000;
+                border:1px solid black;
+                display: block;
+                padding: 10px;
+                background: #FD8DE6;}
 
 /******************* CONTACT PAGE **********************/
 #contact_wrapper {position:fixed;

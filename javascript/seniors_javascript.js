@@ -1,16 +1,32 @@
 // JQuery ****************************************************************************
 $(document).ready(function() {
 
+    $('.row1').click( function() {
+        window.location = $(this).find('a').attr('href');
+    }).hover( function() {
+        $(this).toggleClass('row1_hover');
+    });
+
+    $('.row2').click( function() {
+        window.location = $(this).find('a').attr('href');
+    }).hover( function() {
+        $(this).toggleClass('row2_hover');
+    });
+
+    //SEARCH BUTTON 
     $("#search_button").hover(function(){
         $(this).toggleClass('input_hover');
     });
 
+    //SEARCH NEED PICKER 
     $("#need").hover(function(){
         $(this).toggleClass('search_bar_hover');
     });
 
+    //SCROLLBAR PLUGIN
     $(".content").mCustomScrollbar({scrollButtons:{ enable: true }});
 
+    //SEARCH RESULTS BOX RESIZE
     function result_resize() {
       var bodyheight = $(window).height();
       $("#results").height(bodyheight - 345);
@@ -20,6 +36,7 @@ $(document).ready(function() {
 
     $(window).resize(result_resize);
 
+    //NAVBAR POINTERS
     function point_at(pointer_num){
         $('#pointer_' + pointer_num).animate({  borderSpacing: -10 }, {
             step: function(now) {

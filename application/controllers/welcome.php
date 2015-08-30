@@ -77,7 +77,7 @@ class Welcome extends CI_Controller {
             $this->load->view('results_view', $data);
             $this->load->view('footer.php');
         }
-    }//Testing git Gutter
+    }
 
 
 

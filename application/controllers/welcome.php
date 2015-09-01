@@ -101,9 +101,8 @@ class Welcome extends CI_Controller {
     }
 
     
-    public function contact()
-    {   //This is a change for gitgutter
-        $this->load->view('header.php');
+    public function message()
+    {   $this->load->view('header.php');
         $this->load->view('name_nav_small.php');
         $this->load->view('footer.php');
     }

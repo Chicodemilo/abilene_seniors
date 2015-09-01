@@ -483,7 +483,28 @@
 
 	</div>
 	<div id="index_pic" class="index_pic">
-		<img src="<?php echo base_url(); ?>images/Cover2014.jpg" alt="Abilene Seniors Guide Cover 2014 Edition" id="cover_picture" class="cover_picture">
+	<img src="<?php echo base_url(); ?>images/ABSG_Nov_2014_SMALL.jpg" srcset="<?php echo base_url(); ?>images/ABSG_Nov_2014_SMALL.jpg 600w, <?php echo base_url(); ?>images/ABSG_Nov_2014_MED.jpg 1200w, <?php echo base_url(); ?>images/ABSG_Nov_2014_LARGE.jpg 1900w, <?php echo base_url(); ?>images/ABSG_Nov_2014_LARGE.jpg 1024w 2x" />
 	</div>
-
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

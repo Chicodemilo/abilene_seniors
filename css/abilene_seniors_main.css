@@ -23,6 +23,21 @@ hr {border: 0;
 
 a:link {text-decoration: none;}
 
+.righter {text-align: right; 
+         font-size: 1.1em;
+         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+.lefter  {text-align: left;
+         font-size: 1.1em;
+         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+
+
+.righter_light {text-align: right;
+               font-size: .9em;
+               font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+.lefter_light  {text-align: left;
+               font-size: .9em;
+               font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+
 
 
 /******************* NAME NAV BAR **********************/
@@ -238,52 +253,47 @@ a:link {text-decoration: none;}
             position: fixed;
             top:150px;}
 
-
 .search_bar_no_hover   {width: 400px;
                        padding: 5px;
                        font-size: 16px;
-                       border-radius: 5;
+                       border:none;
                        height: 45px;
                        background: #FFF;
                        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
                        letter-spacing: .1em;
-                       border: 1px solid gray;
-                       box-shadow: 2px 2px 4px #BBB;
                        margin-right: 10px;
                        cursor: pointer;}
 
 .search_bar_hover      {width: 400px;
                        padding: 5px;
-                       font-size: 16px;
-                       border-radius: 5;
                        height: 45px;
-                       background: #f0fcff;
                        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
                        letter-spacing: .1em;
-                       border: 2px solid gray;
-                       box-shadow: 2px 2px 4px #BBB;
                        margin-right: 10px;
+                       background:#E0F4FF;
+                       border:none;
+                       border-radius: 17px;
+                       box-shadow: 2px 2px 5px #9E9E9E;
                        cursor: pointer;}
 
 
-.input_no_hover     {border-radius: 5px;
-                    border: 1px solid gray;
+.input_no_hover     {border-radius: 17px;
+                    border:none;
                     width: 80px;
                     height:45px;
                     background: #fff;
-                    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+                    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
                     font-size: 16px;
-                    box-shadow: 2px 2px 4px #BBB;
                     cursor: pointer;}
 
-.input_hover        {border-radius: 5px;
-                    border: 2px solid gray;
+.input_hover        {border-radius: 17px;
+                    border:none;
                     width: 80px;
                     height:45px;
-                    background: #f0fcff;
-                    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+                    background: #E0F4FF;
+                    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
                     font-size: 16px;
-                    box-shadow: 2px 2px 4px #BBB;
+                    box-shadow: 2px 2px 5px #9E9E9E;
                     cursor: pointer;}
 
 #results {margin: auto;
@@ -435,20 +445,101 @@ a:link {text-decoration: none;}
 
 
 /******************* CONTACT PAGE **********************/
-#contact_wrapper {position:fixed;
-                 top: 0px;
-                 left: 0px;
-                 width: 100%;
-                 height: 100%;
-                 background-color: rgba(255,255,255, .5);
-                 visibility: visible;
-                 z-index: 1;}
-                 
+
+.contact_box_b             {width: 1100px;
+                            margin: auto;
+                            position: fixed;
+                            padding-top: 15px;
+                            top: 125px;
+                            z-index: 35;}
 
 
+.contact_brown    {margin: auto;
+                  position:relative;
+                  left:150px;
+                  width: 800px;
+                  background: -webkit-linear-gradient(left, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .0)); /* For Safari 5.1 to 6.0 */
+                  background: -o-linear-gradient(left, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .0)); /* For Opera 11.1 to 12.0 */
+                  background: -moz-linear-gradient(left, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .0)); /* For Firefox 3.6 to 15 */
+                  background: linear-gradient(to left, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .0)); /* Standard syntax (must be last) */
+                  padding: 5px;
+                  margin: 0;}
+
+.contact_table td   {height:57px;
+                    border: none;
+                    padding:5px;}
+
+#border_top {border-top:3px solid rgb(252, 246, 241);}
+#border_bottom {border-bottom:3px solid rgb(252, 246, 241);}
+
+.contact_table {width:100%;
+                border-collapse: collapse;}
+
+.contact_brown input[type=text] {height: 40px;
+                                border:2px solid gray;
+                                border-radius: 7px;
+                                font-size: 1.1em;}
+
+.contact_brown textarea {height: 100px;
+                        border:2px solid gray;
+                        border-radius: 7px;
+                        font-size: 1.2em;}
+
+.send_button            {height: 40px;
+                        border-radius: 17px;
+                        border:none;
+                        font-size: 1em;
+                        cursor: pointer;}
+             
+.send_button_hover      {height: 40px;
+                        background:#E0F4FF;
+                        border:none;
+                        border-radius: 17px;
+                        box-shadow: 2px 2px 5px #9E9E9E;
+                        font-size: 1em;}             
+
+#row_40 {width: 40%;}
 
 
-/******************* FOOTER **********************/
+/******************* DEFINITONS **********************/
+.content_wrapper_definitions {width: 1000px;
+                             margin: auto;
+                             position: relative;
+                             top: 150px;
+                             z-index: 30;}
+
+#definitions_results    {margin: auto;
+                overflow-x:none;
+                overflow-y: scroll;
+                border: 1px solid rgb(180, 180, 180);
+                width: 970px;
+                display: block;
+                position: fixed;
+                top: 210px;
+                padding: 15px;
+                background: white;
+                border-radius: 10px;
+                box-shadow: 0px 0px 30px rgb(210,180,140);}
+
+.definitions_text {width:940px;
+                  margin-left: 40px;}
+
+.definition_box {width:840px;
+                margin:auto;}
+
+.definition_title {font-size: 1.1em;
+                    display:block;
+                    background:#E0F4FF;
+                    padding:5px;
+                    width:100%;
+                    margin-top: 40px;
+                    margin-bottom: 10px;
+                    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+.definition_description {display:block;
+                        margin:auto;
+                        width:90%;}
+
+/******************* FOOTER **********************/                    
 #footer_scroll {position: fixed;
                 bottom: 0px;
                 z-index: 20;}

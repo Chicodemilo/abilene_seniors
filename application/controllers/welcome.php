@@ -102,9 +102,55 @@ class Welcome extends CI_Controller {
 
     
     public function message()
-    {   $this->load->view('header.php');
-        $this->load->view('name_nav_small.php');
-        $this->load->view('footer.php');
+    {   $this->form_validation->set_rules('name', 'name', 'trim|strip_tags|xss_clean|required');
+        $this->form_validation->set_rules('email', 'email', 'trim|strip_tags|xss_clean|required|valid_email');
+        $this->form_validation->set_rules('subject', 'subject', 'trim|strip_tags|xss_clean|required');
+        $this->form_validation->set_rules('message', 'message', 'trim|strip_tags|xss_clean|required');
+        $this->form_validation->set_rules('mr_robot', 'mr_robot', 'trim|strip_tags|xss_clean|required');
+        $thier_first_num = $this->input->post('first_num');
+        $thier_next_num = $this->input->post('next_num');
+        $correct_ans = $thier_first_num + $thier_next_num;
+        $mr_robot = $this->input->post('mr_robot');
+
+        if($this->form_validation->run() === false || $mr_robot != $correct_ans){
+            if ($mr_robot != $correct_ans) {
+                $data['wrong_ans'] = true;
+            }else{
+                $data['wrong_ans'] = false;                      
+            }
+            $data['first_num'] = rand(1, 4);
+            $data['next_num'] = rand(1, 4);
+            $data['ans'] = $data['first_num'] + $data['next_num'];
+            $this->load->view('header.php');
+            $this->load->view('name_nav_small.php');
+            $this->load->view('message.php', $data);
+            $this->load->view('footer.php');
+        }else{
+            $name = $this->input->post('name');
+            $email = $this->input->post('email');
+            $subject = $this->input->post('subject');
+            $message = $this->input->post('message');
+            date_default_timezone_set('US/Central');
+            $time = date('m/d/Y H:i:s');
+            $comment = array(
+                'name' => $name,
+                'email' => $email,
+                'subject' => $subject,
+                'message' => $message,
+                'time' => $time);
+
+            $this->db->insert('comments', $comment);
+            $this->load->model('email_model', 'email_model');
+            $sent = $this->email_model->send($email, $name, $subject, $message, $time);
+            $sent_b = $this->email_model->send_b($email, $name, $subject, $message, $time);
+            if($sent == true){
+                $this->load->view('header.php');
+                $this->load->view('name_nav_small.php');
+                $this->load->view('success.php');
+                $this->load->view('footer.php');
+            }
+        }
+
     }
     
 
@@ -112,6 +158,7 @@ class Welcome extends CI_Controller {
     {
         $this->load->view('header.php');
         $this->load->view('name_nav_small.php');
+        $this->load->view('definitions.php');
         $this->load->view('footer.php');
     }
 

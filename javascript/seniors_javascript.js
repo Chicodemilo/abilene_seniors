@@ -1,6 +1,11 @@
 // JQuery ****************************************************************************
 $(document).ready(function() {
+    //SUBMIT BUTTON HOVER CHANGE
+    $('.send_button').hover(function(){
+        $(this).toggleClass('send_button_hover');
+    });
 
+    //RESULTS ROW HOVER CHANGE
     $('.row1').click( function() {
         window.location = $(this).find('a').attr('href');
     }).hover( function() {
@@ -35,6 +40,16 @@ $(document).ready(function() {
     result_resize();
 
     $(window).resize(result_resize);
+
+    //DEFINITIONS RESULTS BOX RESIZE
+    function definitions_resize() {
+      var bodyheight = $(window).height();
+      $("#definitions_results").height(bodyheight - 315);
+    }
+
+    definitions_resize();
+
+    $(window).resize(definitions_resize);
 
     //NAVBAR POINTERS
     function point_at(pointer_num){

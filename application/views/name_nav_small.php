@@ -918,7 +918,7 @@
 				</a>
 				</div><!-- ****************************************************************************************************************************** End of Link 2 -->
 			</td>
-			<td><div id="link_3"><a href="<?php echo base_url()?>welcome/contact">
+			<td><div id="link_3"><a href="<?php echo base_url()?>welcome/message">
 					<div id="pointer_3" class="pointer">
 						<svg version="1.1" id="pointer_3_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 width="27px" height="37px" viewBox="0 0 27 37" enable-background="new 0 0 27 37" xml:space="preserve">

@@ -42,27 +42,18 @@ a:link {text-decoration: none;}
 /******************* NAME NAV BAR **********************/
 .top_scroll {display:none;}
 
-.brown_bar  {height: 350px;
+.brown_bar  {height: 200px;
             width: 100%;
             display: block;
             position: fixed;
             margin-top: 0px;
             z-index: -20;
-            background: -webkit-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7)); /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7)); /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7)); /* For Firefox 3.6 to 15 */
-            background: linear-gradient(to top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7)); /* Standard syntax (must be last) */}
+            background: -webkit-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .8), rgba(222, 208, 196, 1.0), rgba(222, 208, 196, 1.0), rgba(222, 208, 196, 1.0)); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .8), rgba(222, 208, 196, 1.0), rgba(222, 208, 196, 1.0), rgba(222, 208, 196, 1.0)); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .8), rgba(222, 208, 196, 1.0), rgba(222, 208, 196, 1.0), rgba(222, 208, 196, 1.0)); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .8), rgba(222, 208, 196, 1.0), rgba(222, 208, 196, 1.0), rgba(222, 208, 196, 1.0)); /* Standard syntax (must be last) */}
 
-.brown_bar_small    {height: 150px;
-                    width: 100%;
-                    display: block;
-                    position: fixed;
-                    margin-top: 0px;
-                    z-index: -20;
-                    background: -webkit-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .9), rgba(222, 208, 196, 1), rgba(222, 208, 196, 1)); /* For Safari 5.1 to 6.0 */
-                    background: -o-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .9), rgba(222, 208, 196, 1), rgba(222, 208, 196, 1)); /* For Opera 11.1 to 12.0 */
-                    background: -moz-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .9), rgba(222, 208, 196, 1), rgba(222, 208, 196, 1)); /* For Firefox 3.6 to 15 */
-                    background: linear-gradient(to top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .9), rgba(222, 208, 196, 1), rgba(222, 208, 196, 1)); /* Standard syntax (must be last) */}
+.brown_bar_small    {display:none;}
 
 .nav_bar_background    {display:none;}
 
@@ -139,19 +130,7 @@ a:link {text-decoration: none;}
                     margin-left: -537px;
                     display: block;}
 
-.under_canvas_fade      {height: 25px;
-                        width: 1076px;
-                        margin: auto;
-                        z-index: 1;
-                        position: fixed;
-                        top: 320px;
-                        left: 50%;
-                        background: -webkit-linear-gradient(top, rgba(252, 246, 241, .0), rgba(252, 246, 241, 1.0), rgba(252, 246, 241, 1.0)); /* For Safari 5.1 to 6.0 */
-                        background: -o-linear-gradient(top, rgba(252, 246, 241, .0), rgba(252, 246, 241, 1.0), rgba(252, 246, 241, 1.0)); /* For Opera 11.1 to 12.0 */
-                        background: -moz-linear-gradient(top, rgba(252, 246, 241, .0), rgba(252, 246, 241, 1.0), rgba(252, 246, 241, 1.0)); /* For Firefox 3.6 to 15 */
-                        background: linear-gradient(to top, rgba(252, 246, 241, .0), rgba(252, 246, 241, 1.0), rgba(252, 246, 241, 1.0)); /* Standard syntax (must be last) */
-                        margin-left: -537px;
-                        display: block;}
+.under_canvas_fade      {display:none}
 
 .nav_bar_mobile {display:block;
                 position:fixed;
@@ -182,7 +161,7 @@ a:link {text-decoration: none;}
                               width:100%;
                               height:20px;
                               padding:20px;
-                              background:rgba(255, 255, 255, .5);
+                              background:rgba(255, 255, 255, .8);
                               z-index: 39;}
 
 #nav_bar_links_button_svg {float:right;
@@ -210,7 +189,7 @@ a:link {text-decoration: none;}
                   left:20px;
                   z-index: 41;}
 
-.abilene_logo_box img {width:230px;}  
+.abilene_logo_box img {width:270px;}  
 
 .abilene_logo_box_small {z-index: 75;
                   display: block;
@@ -219,7 +198,7 @@ a:link {text-decoration: none;}
                   left:20px;
                   z-index: 41;}
 
-.abilene_logo_box_small img {width:230px;}    
+.abilene_logo_box_small img {width:270px;}    
 
 
 
@@ -243,7 +222,7 @@ a:link {text-decoration: none;}
 
 .index_title_box {display:block;
                   position:fixed;
-                  top:215px;
+                  top:100px;
                   z-index: 40;
                   left:13px;}
 

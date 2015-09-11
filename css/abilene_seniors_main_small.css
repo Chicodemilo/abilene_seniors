@@ -197,7 +197,7 @@ a:link {text-decoration: none;}
 .index_title img {width:80vw;}
 
 .index_text     {position:relative;
-                left:20px;
+                left:1px;
                 width: 80vw;
                 font-size: 1.2em;
                 height: 800px;}

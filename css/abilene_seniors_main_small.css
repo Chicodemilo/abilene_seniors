@@ -173,7 +173,7 @@ a:link {text-decoration: none;}
                   left:80px;
                   z-index: 41;}
 
-.abilene_logo_box img {width:550px;}  
+.abilene_logo_box img {width:70vw;}  
 
 .abilene_logo_box_small {z-index: 75;
                         display: block;
@@ -182,7 +182,7 @@ a:link {text-decoration: none;}
                         left:80px;
                         z-index: 41;}
 
-.abilene_logo_box_small img {width:550px;}    
+.abilene_logo_box_small img {width:70vw;}    
 
 
 
@@ -192,10 +192,9 @@ a:link {text-decoration: none;}
                     position:relative;
                     top:80px;}
 
-.index_title    {position: relative;
-                top:30px;
-                left: 20px;
-                width: 100%;}
+.index_title    {display:none;}
+
+.index_title img {width:80vw;}
 
 .index_text     {position:relative;
                 left:20px;

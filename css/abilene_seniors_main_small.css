@@ -18,8 +18,7 @@ hr {border: 0;
             width: 1100px;
             height: 400px;}
 
-.med_title  {font-size: 1.2em;
-            letter-spacing: .13em;}
+.med_title  {display:none;}
 
 a:link {text-decoration: none;}
 
@@ -41,11 +40,7 @@ a:link {text-decoration: none;}
 
 
 /******************* NAME NAV BAR **********************/
-.top_scroll {margin-top: 5px;
-            margin:auto;
-            position: fixed;
-            z-index: 20;
-            top: 5px;}
+.top_scroll {display:none;}
 
 .brown_bar  {height: 350px;
             width: 100%;
@@ -69,36 +64,12 @@ a:link {text-decoration: none;}
                     background: -moz-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .9), rgba(222, 208, 196, 1), rgba(222, 208, 196, 1)); /* For Firefox 3.6 to 15 */
                     background: linear-gradient(to top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .9), rgba(222, 208, 196, 1), rgba(222, 208, 196, 1)); /* Standard syntax (must be last) */}
 
-.nav_bar_background    {height: 40px;
-                        width: 100%;
-                        display: block;
-                        position: fixed;
-                        margin-top: 55px;
-                        z-index: 10;
-                        background: rgba(255,255,255,.7);}
+.nav_bar_background    {display:none;}
 
 
-.nav_bar    {height: 40px;
-            width: 900px;
-            display: block;
-            margin: auto;
-            position: fixed;
-            top: 0%;
-            left: 50%;
-            margin-left: -420px;
-            margin-top: 55px;
-            z-index: 25;}
+.nav_bar    {display:none;}
 
-.nav_bar_small  {height: 40px;
-                width: 900px;
-                display: block;
-                margin: auto;
-                position: fixed;
-                top: 0%;
-                left: 50%;
-                margin-left: -340px;
-                margin-top: 55px;
-                z-index: 25;}
+.nav_bar_small  {display:none;}
 
 
 
@@ -136,26 +107,14 @@ a:link {text-decoration: none;}
 .backup_image   {margin: auto;
                 z-index: -15;
                 position: fixed;
-                top: 0%;
+                top: -70px;
                 left: 50%;
                 margin-left: -537px;
                 display: block;}
 
-.abilene_logo   {margin: auto;
-                position: fixed;
-                top: -2px;
-                left: 50%;
-                margin-left: -500px;
-                z-index: 10;
-                display: block;}
+.abilene_logo   {display: none;}
 
-#abilene_logo_small {margin: auto;
-                    position: fixed;
-                    top: -25px;
-                    left: 50%;
-                    margin-left: -550px;
-                    z-index: 10;
-                    display: block;}
+#abilene_logo_small {display:none}
 
 #link_1 path {transition: .8s;}
 #link_1:hover #home path {fill:#EEB422;}
@@ -176,12 +135,12 @@ a:link {text-decoration: none;}
 #seniors_canvas     {margin: auto;
                     z-index: 0;
                     position: fixed;
-                    top: 0%;
+                    top: -70px;
                     left: 50%;
                     margin-left: -537px;
                     display: block;}
 
-.canvas_fade        {height: 400px;
+.canvas_fade        {height: 330px;
                     width: 1076px;
                     margin: auto;
                     z-index: 1;
@@ -197,7 +156,7 @@ a:link {text-decoration: none;}
                         margin: auto;
                         z-index: 1;
                         position: fixed;
-                        top: 390px;
+                        top: 320px;
                         left: 50%;
                         background: -webkit-linear-gradient(top, rgba(252, 246, 241, .0), rgba(252, 246, 241, 1.0), rgba(252, 246, 241, 1.0)); /* For Safari 5.1 to 6.0 */
                         background: -o-linear-gradient(top, rgba(252, 246, 241, .0), rgba(252, 246, 241, 1.0), rgba(252, 246, 241, 1.0)); /* For Opera 11.1 to 12.0 */
@@ -206,64 +165,125 @@ a:link {text-decoration: none;}
                         margin-left: -537px;
                         display: block;}
 
-.nav_bar_mobile {display:none;}
+.nav_bar_mobile {display:block;
+                position:fixed;
+                top:-450px;
+                left:0px;
+                background:rgba(255, 255, 255, 0.75);
+                width:100%;
+                font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                font-size: 2.2em;
+                box-shadow: 0px 5px 30px #848484;
+                padding-left: 70px;
+                z-index: 45;}
 
-.nav_bar_links_button {display:none;}
 
-.abilene_logo_box {display:none;}
+.nav_bar_links_button {display:block;
+                      position:fixed;
+                      top:-10px;
+                      left:0px;
+                      width:100%;
+                      height:30px;
+                      padding:20px;
+                      z-index: 40;}
 
-.abilene_logo_box_small {display:none;}
+.nav_bar_links_button_banner {display:block;
+                              position:fixed;
+                              top:0px;
+                              left:0px;
+                              width:100%;
+                              height:20px;
+                              padding:20px;
+                              background:rgba(255, 255, 255, .5);
+                              z-index: 39;}
+
+#nav_bar_links_button_svg {float:right;
+                          position:relative;
+                          right:50px;}
+
+.nav_bar_mobile a:link {color: #851C01;}
+.nav_bar_mobile a:visited {color: #851C01;}
+.nav_bar_mobile a:hover   {color: #BF2600;}
+.nav_bar_mobile a:active  {color:#EA2F00; }
+
+.close_x_mobile_svg {cursor:pointer;}
+.close_x_mobile_svg polygon {transition: 0.5s;}
+.close_x_mobile_svg:hover polygon {fill:#FC6060;}
+
+#nav_bar_links_button_svg {cursor:pointer;}
+#nav_bar_links_button_svg rect {transition: 0.7s;}
+#nav_bar_links_button_svg:hover rect {fill:#F15F00;}
+#nav_bar_links_button_svg:active rect {fill:#F15F00;}
+
+.abilene_logo_box {z-index: 75;
+                  display: block;
+                  position:fixed;
+                  top:10px;
+                  left:10px;
+                  z-index: 41;}
+
+.abilene_logo_box img {width:60vw;}  
+
+.abilene_logo_box_small {z-index: 75;
+                  display: block;
+                  position:fixed;
+                  top:0px;
+                  left:20px;
+                  z-index: 41;}
+
+.abilene_logo_box_small img {width:550px;}    
+
+
+
+
 /******************* INDEX PAGE **********************/
-.content_wrapper    {width: 1000px;
-                    margin: auto;
-                    position: relative;
-                    top: 370px;
-                    z-index: -25;}
+.content_wrapper    {display:block;
+                    position:relative;
+                    top:295px;}
 
-.index_title    {position: relative;
-                top:30px;
-                left: 100px;
-                width: 450px;}
+.index_title    {display:none;}
 
-.index_text     {position: relative;
-                top:40px;
-                left: 100px;
-                width: 450px;
+.index_text     {position:relative;
+                left:20px;
+                width: 80vw;
+                font-size: 1.2em;
                 height: 800px;}
 
-.index_pic      {float: right;
-                height: 400px;
-                width: 308px;
-                position: relative;
-                top: -810px;
-                left: -70px;
-                box-shadow: 5px 5px 10px #D5D5D5;
-                border: 1px solid black;}
+.index_pic      {display:none;}
 
-.index_pic img {width:308px;}
+.index_pic img {display:none;}
 
-.index_title_box {display:none;}
+.index_title_box {display:block;
+                  position:fixed;
+                  top:215px;
+                  z-index: 40;
+                  left:13px;}
 
-.mobile_index_pic {display:none;}
+.index_title_box img {width:92vw;}
 
+.mobile_index_pic {display:block;
+                  position:relative;
+                  margin:auto;}
+
+.mobile_index_pic img {width:80vw;
+                      border:1px solid black;
+                      box-shadow:5px 5px 10px #D5D5D5;}
 /******************* SEARCH & RESULTS PAGE **********************/
-.content_wrapper_search {width: 1000px;
+.content_wrapper_search {width: 100%;
                         margin: auto;
                         position: relative;
-                        top: 150px;
+                        top: 250px;
                         z-index: 30;}
 
 .search_bar {margin: auto;
-            width: 970px;
-            background: -webkit-linear-gradient(left, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .0)); /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(left, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .0)); /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(left, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .0)); /* For Firefox 3.6 to 15 */
-            background: linear-gradient(to left, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .0)); /* Standard syntax (must be last) */
+            width: 100%;
+            background: rgba(222, 208, 196, .7);
             padding: 15px;
             position: fixed;
-            top:150px;}
+            top:185px;
+            text-align: center;}
 
-.search_bar_no_hover   {width: 400px;
+.search_bar_no_hover   {width: 450px;
                        padding: 5px;
                        font-size: 16px;
                        border:none;
@@ -274,7 +294,7 @@ a:link {text-decoration: none;}
                        margin-right: 10px;
                        cursor: pointer;}
 
-.search_bar_hover      {width: 400px;
+.search_bar_hover      {width: 450px;
                        padding: 5px;
                        height: 45px;
                        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -289,7 +309,7 @@ a:link {text-decoration: none;}
 
 .input_no_hover     {border-radius: 17px;
                     border:none;
-                    width: 80px;
+                    width: 100px;
                     height:45px;
                     background: #fff;
                     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -298,7 +318,7 @@ a:link {text-decoration: none;}
 
 .input_hover        {border-radius: 17px;
                     border:none;
-                    width: 80px;
+                    width: 100px;
                     height:45px;
                     background: #E0F4FF;
                     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -307,16 +327,16 @@ a:link {text-decoration: none;}
                     cursor: pointer;}
 
 #results {margin: auto;
+        width:100vw;
         overflow-x:none;
         overflow-y: scroll;
         border: 1px solid rgb(180, 180, 180);
-        width: 970px;
         display: block;
         position: fixed;
-        top: 245px;
+        top: 275px;
         padding: 15px;
         background: white;
-        border-radius: 10px;
+        border-radius: 0px;
         box-shadow: 0px 0px 30px rgb(210,180,140);}
 
 #results table {width: 100%;
@@ -353,11 +373,12 @@ a:link {text-decoration: none;}
                 padding:4px;}
 
 .pagination_numbers {margin: auto;
+                    font-size: 1.4em;
                     height: 20px;
                     margin-left: 30px;
                     display: block;
                     position: fixed;
-                    bottom: 42px;}
+                    bottom: 20px;}
 
 .no_resource {margin: auto;
              text-align: center;
@@ -639,14 +660,7 @@ a:link {text-decoration: none;}
             bottom: 42px;}
 
 /******************* FOOTER **********************/                    
-#footer_scroll {position: fixed;
-                bottom: 0px;
-                z-index: 20;}
+#footer_scroll {display:none;}
 
-#footer_blocker {position: fixed;
-                bottom: 0px;
-                z-index: 19;
-                height: 30px;
-                width: 1200px;
-                background: rgb(252, 246, 241);}
+#footer_blocker {display:none;}
         

@@ -25,10 +25,10 @@
 			foreach($resources->result() AS $row) { 
     
     			if ($flipper == 1){
-            		echo "<tr class='row1'><td><a href='".base_url()."welcome/resource/".$row->id."'>".$row->name."</a></td><td>".$row->categoryone."</td><td>".$row->phone."</td></tr>";
+            		echo "<tr class='row1'><td><a href='".base_url()."welcome/resource/".$row->id."'>".$row->name."</a></td><td>".$row->categoryone."</td><td class='phone'>".$row->phone."</td></tr>";
             		$flipper = 2;
         		}else{
-        			echo "<tr class='row2'><td><a href='".base_url()."welcome/resource/".$row->id."'>".$row->name."</a></td><td>".$row->categoryone."</td><td>".$row->phone."</td></tr>";
+        			echo "<tr class='row2'><td><a href='".base_url()."welcome/resource/".$row->id."'>".$row->name."</a></td><td>".$row->categoryone."</td><td class='phone'>".$row->phone."</td></tr>";
             		$flipper = 1;
         		}
 			}

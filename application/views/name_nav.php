@@ -713,7 +713,39 @@
 </svg>
 
 </div> <!-- ****************************************************************************************************************************** End Abilene Logo -->
+<div class="abilene_logo_box" id="abilene_logo_box">
+    <img src="<?php echo base_url(); ?>/images/logo_mobile.svg" alt="Abilene Seniors Magazine">
+	
+</div>
+<div class="nav_bar_mobile" id="nav_bar_mobile">
+	<ul>
+		<li><a href="<?php echo base_url(); ?>">HOME</a></li>
+		<li><a href="<?php echo base_url(); ?>welcome/search">SEARCH</a></li>
+		<li><a href="<?php echo base_url(); ?>welcome/message">CONTACT</a></li>
+		<li><a href="<?php echo base_url(); ?>welcome/definitions">DEFINITIONS</a></li>
+		<li><a href="<?php echo base_url(); ?>welcome/blog">BLOG</a></li>
+	</ul>
+	<div class='close_x_mobile' id='close_x_mobile'>
+	<svg version="1.1" id="close_x_mobile_svg" class="close_x_mobile_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 width="50px" height="50px" viewBox="0 0 198 198" enable-background="new 0 0 198 198" xml:space="preserve">
+					<polygon fill="#890E0E" points="171.25,19.941 100.535,90.655 29.82,19.941 20.111,29.651 90.825,100.365 20.112,171.078 29.822,180.789 
+						100.535,110.075 171.248,180.787 180.957,171.078 110.244,100.365 180.957,29.651 "/>
+					</svg>
+	</div>
+</div>
+<div class="nav_bar_links_button_banner"></div>
+<div class="nav_bar_links_button" id="nav_bar_links_button">
+            <svg version="1.1" id="nav_bar_links_button_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="60px" height="90px" viewBox="0 0 140.069 380.217" enable-background="new 0 0 140.069 380.217"
+                 xml:space="preserve">
+            <rect fill="#632700" y="52.525" width="190.069" height="15.54"/>
+            <rect fill="#632700" width="190.069" height="15.54"/>
+            <rect fill="#632700" y="157.576" width="190.069" height="15.54"/>
+            <rect fill="#632700" y="105.051" width="190.069" height="15.54"/>
+            </svg>
+</div>
 <div id="nav_bar" class="nav_bar">
+
 	<table>
 		<tr>
 			<td><div id="link_1"><a href="<?php echo base_url() ?>">

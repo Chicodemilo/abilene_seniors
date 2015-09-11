@@ -1,5 +1,15 @@
 // JQuery ****************************************************************************
 $(document).ready(function() {
+    //SHOW MOBILE LINKS
+    $('#nav_bar_links_button_svg').click(function(event) {
+            $('#nav_bar_mobile').animate({top: '+=450'}, 500);
+        });
+
+    //HIDE MOBILE LINKS
+    $('#close_x_mobile_svg').click(function(){
+            $('#nav_bar_mobile').animate({top: '-=450'}, 300);
+        });
+
 
     //PICTURE VIEWER
     $('#view_larger').click(function(){

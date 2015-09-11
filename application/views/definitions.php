@@ -1,5 +1,5 @@
 <div class="content_wrapper_definitions">
-    <div class="definitions_text">There are tons of terms in the Senior Care industry... it can be dificult to know what you should be looking for. <br>Spend a few minutes reading these definitions and you'll soon know the difference between 'Assisted Living' and 'Skilled Nursing.'</div>
+    <div class="definitions_text">There are tons of terms in the Senior Care industry... it can be dificult to know what you should be looking for. <br>Spend a few minutes reading these definitions and you'll soon know the difference between things like 'Assisted Living', 'Skilled Nursing', and 'Independent Living.'</div>
     <div class="mCustomScrollbar" data-mcs-theme="dark-thick" id="definitions_results">
         <div id="definition_box" class="definition_box">
             <h2 class="definition_title">Alzheimer&#8217;s or Memory Care Facility </h2>

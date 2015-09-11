@@ -154,6 +154,7 @@ class Welcome extends CI_Controller {
     }
     
 
+
     public function definitions()
     {
         $this->load->view('header.php');
@@ -163,11 +164,46 @@ class Welcome extends CI_Controller {
     }
 
 
-    public function blog()
+
+    public function blog($year = "none")
     {
-        $this->load->view('header.php');
+        if($year == 'none'){
+            $year =  date('Y');
+        }
+        $this->load->model('blog_model', 'blog_model');
+        $data['blog'] = $this->blog_model->get_all_blog($year);
+        $data['years'] = $this->blog_model->get_years();
+        $data['year'] = $year;
+        if(count($data['blog']) >= 1){
+            $this->load->view('header.php');
+            $this->load->view('name_nav_small.php');
+            $this->load->view('blog.php', $data);
+            $this->load->view('footer.php');
+        }else{
+            $this->load->view('header.php');
+            $this->load->view('name_nav_small.php');
+            $this->load->view('no_resource_blog.php');
+            $this->load->view('footer.php');
+        }
+    }
+
+
+
+    public function blog_post($id, $title)
+    {
+        $this->load->model('blog_model', 'blog_model');
+        $data['blog'] = $this->blog_model->get_one_post($id);
+        $this->load->view('blog_header.php', $data);
         $this->load->view('name_nav_small.php');
+        $this->load->view('one_post.php', $data);
         $this->load->view('footer.php');
+    }
+
+
+    public function get_years(){
+        $this->load->model('blog_model', 'blog_model');
+        $data['years'] = $this->blog_model->get_years();
+        print_r($data['years']);
     }
 
 

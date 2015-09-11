@@ -4,7 +4,7 @@
     <title>
       Abilene Seniors Magazine
     </title>
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url();?>images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url();?>images/favicon_favicon.ico">
     <meta charset="utf-8" />
     <meta name="description" content="Abilene Seniors Magazine">
     <meta name="keywords" content="Abilene, Texas, Seniors, Retirement, Home Health">

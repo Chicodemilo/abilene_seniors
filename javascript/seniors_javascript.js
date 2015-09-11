@@ -1,5 +1,20 @@
 // JQuery ****************************************************************************
 $(document).ready(function() {
+
+    //PICTURE VIEWER
+    $('#view_larger').click(function(){
+        $('#pic_viewer_page').fadeIn(400);
+        $('#resource_brown').fadeOut(1000);
+        window.scrollTo(0,0);
+    });
+
+    //PICTURE HIDER
+    $('#red_x').click(function(){
+        $('#pic_viewer_page').fadeOut(200);
+        $('#resource_brown').fadeIn(600);
+     });
+
+
     //SUBMIT BUTTON HOVER CHANGE
     $('.send_button').hover(function(){
         $(this).toggleClass('send_button_hover');
@@ -44,12 +59,23 @@ $(document).ready(function() {
     //DEFINITIONS RESULTS BOX RESIZE
     function definitions_resize() {
       var bodyheight = $(window).height();
-      $("#definitions_results").height(bodyheight - 315);
+      $("#definitions_results").height(bodyheight - 320);
     }
 
     definitions_resize();
 
     $(window).resize(definitions_resize);
+
+
+    //DEFINITIONS RESULTS BOX RESIZE
+    function blog_resize() {
+      var bodyheight = $(window).height();
+      $("#blog_results").height(bodyheight - 275);
+    }
+
+    blog_resize();
+
+    $(window).resize(blog_resize);
 
     //NAVBAR POINTERS
     function point_at(pointer_num){

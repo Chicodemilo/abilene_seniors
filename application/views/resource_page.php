@@ -1,6 +1,29 @@
+<div class="pic_viewer_page" id="pic_viewer_page">
+	<div class="image_box" id="imagebox">
+		
 
+			<?php 
+			    echo "<div class='close_x' id='close_x'>";
+				echo '<svg version="1.1" id="red_x" class="red_x" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 width="35px" height="35px" viewBox="0 0 198 198" enable-background="new 0 0 198 198" xml:space="preserve">
+					<polygon fill="#890E0E" points="171.25,19.941 100.535,90.655 29.82,19.941 20.111,29.651 90.825,100.365 20.112,171.078 29.822,180.789 
+						100.535,110.075 171.248,180.787 180.957,171.078 110.244,100.365 180.957,29.651 "/>
+					</svg>';
+				echo "</div>";
+				$pic_name = $resource[0]['pic_name'];
+			 	echo "<img src='".base_url()."resources/".$resource[0]['id']."/"."images/MED/".$pic_name.".jpg' srcset='".base_url()."resources/".$resource[0]['id']."/"."images/SMALL/".$pic_name.".jpg 650w, ".base_url()."resources/".$resource[0]['id']."/"."images/MED/".$pic_name.".jpg 1300w, ".base_url()."resources/".$resource[0]['id']."/"."images/LARGE/".$pic_name.".jpg 1900w, ".base_url()."resources/".$resource[0]['id']."/"."images/LARGE/".$pic_name.".jpg 1024w 2x' />";
+			?>
+		
+	</div>
+
+</div>
 <div id="back_button" class="back_button">
-	<a href="javascript:history.back()">&#60;&#60;&#60;BACK</a>
+	<a href="javascript:history.back()">&#8592;back</a>
+	<?php 
+	if($resource[0]['pic_name'] != '')
+	    {echo '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" id="view_larger">&#8595;view the image larger</a>';}
+	 ?>
+
 </div>
 <?php 
 	$address = $resource[0]['address'];
@@ -65,7 +88,7 @@
 					<?php 
 						if ($resource[0]['pic_name'] != '') {
 							$pic_name = 'pic_one';
-							echo "<img src='".base_url()."resources/".$resource[0]['id']."/"."images/".$pic_name."_MED.jpg' srcset='".base_url()."resources/".$resource[0]['id']."/"."images/".$pic_name."_SMALL.jpg 650w, ".base_url()."resources/".$resource[0]['id']."/"."images/".$pic_name."_MED.jpg 1300w, ".base_url()."resources/".$resource[0]['id']."/"."images/".$pic_name."_LARGE.jpg 1900w, ".base_url()."resources/".$resource[0]['id']."/"."images/".$pic_name."_LARGE.jpg 1024w 2x' />";
+							echo "<img src='".base_url()."resources/".$resource[0]['id']."/"."images/MED/".$pic_name.".jpg' srcset='".base_url()."resources/".$resource[0]['id']."/"."images/SMALL/".$pic_name.".jpg 650w, ".base_url()."resources/".$resource[0]['id']."/"."images/MED/".$pic_name.".jpg 1300w, ".base_url()."resources/".$resource[0]['id']."/"."images/LARGE/".$pic_name.".jpg 1900w, ".base_url()."resources/".$resource[0]['id']."/"."images/LARGE/".$pic_name.".jpg 1024w 2x' />";
 						}
 					?>
 				</div>

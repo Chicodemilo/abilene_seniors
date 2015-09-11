@@ -9,7 +9,7 @@
                     <input type="text" maxlength="50" id="name" size="45" name="name" 
                            placeholder="<?php if (form_error('name') != ''){echo form_error('name');}else{echo '';}?>"
                            value="<?php if (set_value('name') != ''){echo set_value('name');}else{echo '';}?>"
-                           /></td></tr>
+                           autofocus /></td></tr>
                 
                 
                 <tr id="border_top"><td class="righter">Email:</td><td>
@@ -46,3 +46,8 @@
       </div>
 
 </div>
+<script type="text/javascript">
+  $(document).ready(function() {
+    var input = document.getElementById("name").focus();
+  }); 
+</script>

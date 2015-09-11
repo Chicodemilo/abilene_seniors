@@ -80,22 +80,16 @@ a:link {text-decoration: none;}
 #blog {width: 105px;}
 #link_5 {width: 132px;}
 
-.nav_bar table  {width: 900px;
-                border-collapse: collapse;
-                text-align: center;
-                margin: auto;}
+.nav_bar table  {display:none;}
 .nav_bar td     {height: 36px;}
 
-.nav_bar_small table    {width: 900px;
-                        border-collapse: collapse;
-                        text-align: center;
-                        margin: auto;}
+.nav_bar_small table    {display:none;}
 .nav_bar_small td       {height: 36px;}
 
 .pointer    {float:left;
             display:block;}
 
-.backup_image   {display:none;abilene_logo_box}
+.backup_image   {display:none;}
 
 .abilene_logo   {display: none;}
 
@@ -119,18 +113,9 @@ a:link {text-decoration: none;}
 
 #seniors_canvas     {display:none;}
 
-.canvas_fade        {height: 330px;
-                    width: 1076px;
-                    margin: auto;
-                    z-index: 1;
-                    position: fixed;
-                    top: 0%;
-                    left: 50%;
-                    background: rgba(255,250,240, .2);
-                    margin-left: -537px;
-                    display: block;}
+.canvas_fade        {display:none;}
 
-.under_canvas_fade      {display:none}
+.under_canvas_fade      {display:none;}
 
 .nav_bar_mobile {display:block;
                 position:fixed;
@@ -206,7 +191,7 @@ a:link {text-decoration: none;}
 /******************* INDEX PAGE **********************/
 .content_wrapper    {display:block;
                     position:relative;
-                    top:295px;}
+                    top:170px;}
 
 .index_title    {display:none;}
 

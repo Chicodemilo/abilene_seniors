@@ -104,13 +104,7 @@ a:link {text-decoration: none;}
 .pointer    {float:left;
             display:block;}
 
-.backup_image   {margin: auto;
-                z-index: -15;
-                position: fixed;
-                top: -70px;
-                left: 50%;
-                margin-left: -537px;
-                display: block;}
+.backup_image   {display:none;abilene_logo_box}
 
 .abilene_logo   {display: none;}
 
@@ -132,13 +126,7 @@ a:link {text-decoration: none;}
 #link_5:hover #blog path {fill:#EEB422;}
 
 
-#seniors_canvas     {margin: auto;
-                    z-index: 0;
-                    position: fixed;
-                    top: -70px;
-                    left: 50%;
-                    margin-left: -537px;
-                    display: block;}
+#seniors_canvas     {display:none;}
 
 .canvas_fade        {height: 330px;
                     width: 1076px;
@@ -219,19 +207,19 @@ a:link {text-decoration: none;}
                   display: block;
                   position:fixed;
                   top:10px;
-                  left:10px;
+                  left:20px;
                   z-index: 41;}
 
-.abilene_logo_box img {width:60vw;}  
+.abilene_logo_box img {width:230px;}  
 
 .abilene_logo_box_small {z-index: 75;
                   display: block;
                   position:fixed;
-                  top:0px;
+                  top:10px;
                   left:20px;
                   z-index: 41;}
 
-.abilene_logo_box_small img {width:550px;}    
+.abilene_logo_box_small img {width:230px;}    
 
 
 

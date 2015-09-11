@@ -416,10 +416,10 @@ a:link {text-decoration: none;}
                   justify-content: center;}
 
 .back_button    {position: fixed;
-                width:1100px;
+                width:1010px;
                 margin:auto;
                 top:105px;
-                padding-left: 730px;
+                text-align: right;
                 z-index: 35;}
 
 .red_x {cursor:pointer;}

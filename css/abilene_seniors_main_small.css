@@ -130,7 +130,7 @@ a:link {text-decoration: none;}
 
 .nav_bar_links_button {display:block;
                       position:fixed;
-                      top:10px;
+                      top:5px;
                       left:-30px;
                       width:100%;
                       height:30px;
@@ -150,7 +150,7 @@ a:link {text-decoration: none;}
 
 #nav_bar_links_button_svg {float:left;
                           position:relative;
-                          left:10px;}
+                          left:0px;}
 
 .nav_bar_mobile a:link {color: #851C01;}
 .nav_bar_mobile a:visited {color: #851C01;}
@@ -169,20 +169,20 @@ a:link {text-decoration: none;}
 .abilene_logo_box {z-index: 75;
                   display: block;
                   position:fixed;
-                  top:15px;
-                  left:80px;
+                  top:10px;
+                  left:55px;
                   z-index: 41;}
 
-.abilene_logo_box img {width:70vw;}  
+.abilene_logo_box img {width:85vw;}  
 
 .abilene_logo_box_small {z-index: 75;
                         display: block;
                         position:fixed;
-                        top:15px;
-                        left:80px;
+                        top:10px;
+                        left:55px;
                         z-index: 41;}
 
-.abilene_logo_box_small img {width:70vw;}    
+.abilene_logo_box_small img {width:85vw;}    
 
 
 
@@ -190,11 +190,11 @@ a:link {text-decoration: none;}
 /******************* INDEX PAGE **********************/
 .content_wrapper    {display:block;
                     position:relative;
-                    top:80px;}
+                    top:12vw;}
 
 .index_title    {display:none;}
 
-.index_title img {width:80vw;}
+.index_title img {width:90vw;}
 
 .index_text     {position:relative;
                 left:1px;

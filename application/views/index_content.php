@@ -473,7 +473,13 @@
 		</svg>
 	</div>
 	<div class="index_text">
-		This is the website for the <span class='bold'>Abilene Seniors' Magazine</span> which is available at over 200 locations around the Abilene area. <br/><br/>The heart of our site can be found in by clicking on the SEARCH in the links tab above.  There you'll discover an easy way to find services of interest to seniors and retired folks all through the Big Country.  For example, you'll find listings for... 
+	
+		This is the website for the <span class='bold'>Abilene Seniors' Magazine</span> which is available at over 200 locations around the Abilene area. <br/><br/>The heart of our site can be found in by clicking on the SEARCH link in the tab above.  There you'll discover an easy way to find services of interest to seniors and retired folks all through the Big Country.  
+		<div id="mobile_index_pic" class="mobile_index_pic">
+
+				<img src="<?php echo base_url(); ?>images/ABSG_Nov_2014_SMALL.jpg" srcset="<?php echo base_url(); ?>images/ABSG_Nov_2014_SMALL.jpg 600w, <?php echo base_url(); ?>images/ABSG_Nov_2014_MED.jpg 1200w, <?php echo base_url(); ?>images/ABSG_Nov_2014_LARGE.jpg 1900w, <?php echo base_url(); ?>images/ABSG_Nov_2014_LARGE.jpg 1024w 2x" />
+		</div>
+		For example, you'll find listings for... 
             <ul>
                 <li>Retirement and Independent Living Facilities</li> 
                 <li>Home Health Care Providers</li>
@@ -482,9 +488,7 @@
                 <li>Volunteer Opportunities</li>
                 <li>And A Ton More Senior and Retirement Related Services</li>
             </ul>
-            <div id="mobile_index_pic" class="mobile_index_pic">
-				<img src="<?php echo base_url(); ?>images/ABSG_Nov_2014_SMALL.jpg" srcset="<?php echo base_url(); ?>images/ABSG_Nov_2014_SMALL.jpg 600w, <?php echo base_url(); ?>images/ABSG_Nov_2014_MED.jpg 1200w, <?php echo base_url(); ?>images/ABSG_Nov_2014_LARGE.jpg 1900w, <?php echo base_url(); ?>images/ABSG_Nov_2014_LARGE.jpg 1024w 2x" />
-			</div>
+            
 
         So please take a moment to find what you need - we've tried to make it as simple as possible so that you can discover businesses and services quickly.  <br/><br/>If you are not sure of the type of service you need, take a look at our DEFINITIONS page.  We go over some types of businesses in our database so you can better pick the one you need.<br/> <br />Also take a look at our new BLOG, we'll be adding articles about seniors happenings around town. <br/> <br />If you have any comments or suggestions for the site, or if you'd like to add a listing to our database, please use the CONTACT tab to let us know.
 

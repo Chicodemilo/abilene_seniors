@@ -14,9 +14,7 @@ hr {border: 0;
     background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
     background-image:      -o-linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); }
 
-#wrapper    {margin:auto;
-            width: 1100px;
-            height: 400px;}
+#wrapper    {}
 
 .med_title  {display:none;}
 
@@ -42,16 +40,16 @@ a:link {text-decoration: none;}
 /******************* NAME NAV BAR **********************/
 .top_scroll {display:none;}
 
-.brown_bar  {height: 200px;
+.brown_bar  {height: 60px;
             width: 100%;
             display: block;
             position: fixed;
             margin-top: 0px;
             z-index: -20;
-            background: -webkit-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .8), rgba(222, 208, 196, 1.0), rgba(222, 208, 196, 1.0), rgba(222, 208, 196, 1.0)); /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .8), rgba(222, 208, 196, 1.0), rgba(222, 208, 196, 1.0), rgba(222, 208, 196, 1.0)); /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .8), rgba(222, 208, 196, 1.0), rgba(222, 208, 196, 1.0), rgba(222, 208, 196, 1.0)); /* For Firefox 3.6 to 15 */
-            background: linear-gradient(to top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .8), rgba(222, 208, 196, 1.0), rgba(222, 208, 196, 1.0), rgba(222, 208, 196, 1.0)); /* Standard syntax (must be last) */}
+            background: -webkit-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .8)); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .8)); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .8)); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to top, rgba(222, 208, 196, .0), rgba(222, 208, 196, .8)); /* Standard syntax (must be last) */}
 
 .brown_bar_small    {display:none;}
 
@@ -121,7 +119,7 @@ a:link {text-decoration: none;}
                 position:fixed;
                 top:-450px;
                 left:0px;
-                background:rgba(255, 255, 255, 0.75);
+                background:rgba(255, 255, 255, 0.85);
                 width:100%;
                 font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
                 font-size: 2.2em;
@@ -132,8 +130,8 @@ a:link {text-decoration: none;}
 
 .nav_bar_links_button {display:block;
                       position:fixed;
-                      top:-10px;
-                      left:0px;
+                      top:10px;
+                      left:-30px;
                       width:100%;
                       height:30px;
                       padding:20px;
@@ -144,14 +142,15 @@ a:link {text-decoration: none;}
                               top:0px;
                               left:0px;
                               width:100%;
-                              height:20px;
+                              height:50px;
                               padding:20px;
                               background:rgba(255, 255, 255, .8);
+                              border-bottom:1px dotted gray;
                               z-index: 39;}
 
-#nav_bar_links_button_svg {float:right;
+#nav_bar_links_button_svg {float:left;
                           position:relative;
-                          right:50px;}
+                          left:10px;}
 
 .nav_bar_mobile a:link {color: #851C01;}
 .nav_bar_mobile a:visited {color: #851C01;}
@@ -170,20 +169,20 @@ a:link {text-decoration: none;}
 .abilene_logo_box {z-index: 75;
                   display: block;
                   position:fixed;
-                  top:10px;
-                  left:20px;
+                  top:15px;
+                  left:80px;
                   z-index: 41;}
 
-.abilene_logo_box img {width:270px;}  
+.abilene_logo_box img {width:550px;}  
 
 .abilene_logo_box_small {z-index: 75;
-                  display: block;
-                  position:fixed;
-                  top:10px;
-                  left:20px;
-                  z-index: 41;}
+                        display: block;
+                        position:fixed;
+                        top:15px;
+                        left:80px;
+                        z-index: 41;}
 
-.abilene_logo_box_small img {width:270px;}    
+.abilene_logo_box_small img {width:550px;}    
 
 
 
@@ -191,9 +190,12 @@ a:link {text-decoration: none;}
 /******************* INDEX PAGE **********************/
 .content_wrapper    {display:block;
                     position:relative;
-                    top:170px;}
+                    top:80px;}
 
-.index_title    {display:none;}
+.index_title    {position: relative;
+                top:30px;
+                left: 20px;
+                width: 100%;}
 
 .index_text     {position:relative;
                 left:20px;
@@ -211,11 +213,11 @@ a:link {text-decoration: none;}
                   z-index: 40;
                   left:13px;}
 
-.index_title_box img {width:92vw;}
+.index_title_box img {display:none;}
 
 .mobile_index_pic {display:block;
-                  position:relative;
-                  margin:auto;}
+                  margin-top: 30px;
+                  margin-bottom: 20px;}
 
 .mobile_index_pic img {width:80vw;
                       border:1px solid black;

@@ -108,8 +108,11 @@ a:link {text-decoration: none;}
 #link_5 path {transition: .8s;}
 #link_5:hover #blog path {fill:#EEB422;}
 
+#senior_canvas {display:none;}
 
-#seniors_canvas     {margin: auto;
+.canvas_fade {display:none;}
+
+/*#seniors_canvas     {margin: auto;
                     z-index: 0;
                     position: fixed;
                     top: 62px;
@@ -129,7 +132,7 @@ a:link {text-decoration: none;}
                     background: rgba(255,250,240, .5);
                     margin-left: -537px;
                     display: block;
-                    z-index: -29;}
+                    z-index: -29;}*/
 
 .under_canvas_fade      {display:none;}
 

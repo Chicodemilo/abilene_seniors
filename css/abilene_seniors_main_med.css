@@ -108,8 +108,11 @@ a:link {text-decoration: none;}
 #link_5 path {transition: .8s;}
 #link_5:hover #blog path {fill:#EEB422;}
 
+#senior_canvas {display:none;}
 
-#seniors_canvas     {margin: auto;
+.canvas_fade {display:none;}
+
+/*#seniors_canvas     {margin: auto;
                     z-index: 0;
                     position: fixed;
                     top: 62px;
@@ -117,9 +120,9 @@ a:link {text-decoration: none;}
                     width:100%;
                     margin-left: -50vw;
                     display: block;
-                    z-index: -30;}
+                    z-index: -30;}*/
 
-.canvas_fade        {height: 700px;
+/*.canvas_fade        {height: 700px;
                     width: 100%;
                     margin: auto;
                     z-index: 1;
@@ -128,7 +131,7 @@ a:link {text-decoration: none;}
                     left: 50%;
                     background: rgba(255,250,240, .7);
                     display: block;
-                    z-index: -29;}
+                    z-index: -29;}*/
 
 .under_canvas_fade      {display:none;}
 

@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="description" content="Abilene Seniors Magazine">
     <meta name="keywords" content="Abilene, Texas, Seniors, Retirement, Home Health">
-    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="<?php echo base_url();?>css/redmond/jquery-ui-1.10.4.custom.css" rel="stylesheet">
     <script src="<?php echo base_url();?>javascript/jquery-1.10.2.js"></script>
     <script src="<?php echo base_url();?>javascript/jquery-ui-1.10.4.custom.js"></script>

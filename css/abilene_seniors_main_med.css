@@ -112,9 +112,10 @@ a:link {text-decoration: none;}
 #seniors_canvas     {margin: auto;
                     z-index: 0;
                     position: fixed;
-                    top: 0%;
+                    top: 62px;
                     left: 50%;
-                    margin-left: -537px;
+                    width:100%;
+                    margin-left: -50vw;
                     display: block;
                     z-index: -30;}
 
@@ -123,7 +124,7 @@ a:link {text-decoration: none;}
                     margin: auto;
                     z-index: 1;
                     position: fixed;
-                    top: 0%;
+                    top: 50px;
                     left: 50%;
                     background: rgba(255,250,240, .7);
                     margin-left: -537px;
@@ -209,14 +210,15 @@ a:link {text-decoration: none;}
 /******************* INDEX PAGE **********************/
 .content_wrapper    {display:block;
                     position:relative;
-                    top:13vw;}
+                    top:100px;}
 
 .index_title    {display:none;}
 
-.index_title img {width:90vw;}
+.index_title img {display:none;}
 
 .index_text     {position:relative;
                 left:1px;
+                top:65px;
                 width: 85vw;
                 font-size: 1.1em;
                 height: 800px;}
@@ -225,17 +227,14 @@ a:link {text-decoration: none;}
 
 .index_pic img {display:none;}
 
-.index_title_box {display:block;
-                  position:fixed;
-                  top:100px;
-                  z-index: 40;
-                  left:13px;}
+.index_title_box {display:none;}
 
 .index_title_box img {display:none;}
 
 .mobile_index_pic {display:block;
-                  width:40%;
+                  width:42%;
                   margin:35px;
+                  margin-top: 0px;
                   float:left;}
 
 .mobile_index_pic img {width:80vw;
@@ -251,7 +250,7 @@ a:link {text-decoration: none;}
 
 .search_bar {margin: auto;
             width: 100%;
-            background: rgba(222, 208, 196, .7);
+            background: rgba(222, 208, 196, .5);
             padding: 15px;
             position: fixed;
             top:185px;

@@ -112,9 +112,10 @@ a:link {text-decoration: none;}
 #seniors_canvas     {margin: auto;
                     z-index: 0;
                     position: fixed;
-                    top: 0%;
+                    top: 62px;
                     left: 50%;
-                    margin-left: -80vw;
+                    width:100%;
+                    margin-left: -50vw;
                     display: block;
                     z-index: -30;}
 
@@ -125,7 +126,7 @@ a:link {text-decoration: none;}
                     position: fixed;
                     top: 0%;
                     left: 50%;
-                    background: rgba(255,250,240, .7);
+                    background: rgba(255,250,240, .5);
                     margin-left: -537px;
                     display: block;
                     z-index: -29;}
@@ -218,6 +219,7 @@ a:link {text-decoration: none;}
 .index_text     {position:relative;
                 left:1px;
                 width: 80vw;
+                top:50px;
                 font-size: 1.1em;
                 height: 800px;}
 
@@ -236,6 +238,7 @@ a:link {text-decoration: none;}
 .mobile_index_pic {display:block;
                   position:relative;
                   left:-30px;
+                  margin-bottom: 5px;
                   width:90%;}
 
 .mobile_index_pic img {width:100%;

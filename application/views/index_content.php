@@ -1,6 +1,3 @@
-<div class="index_title_box" id="index_title_box">
-	<img src="<?php echo base_url(); ?>images/index_title.svg" alt="Welcome To Abilene Seniors Magazine .Com">
-</div>
 <div id="content_wrapper" class="content_wrapper">
 	<div id="index_title" class="index_title">
 		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -473,12 +470,16 @@
 		</svg>
 	</div>
 	<div class="index_text">
-	
-		This is the website for the <span class='bold'>Abilene Seniors' Magazine</span> which is available at over 200 locations around the Abilene area. 
-		<div id="mobile_index_pic" class="mobile_index_pic">
+		<div class="index_title_box" id="index_title_box">
+			<img src="<?php echo base_url(); ?>images/index_title.svg" alt="Welcome To Abilene Seniors Magazine .Com">
+		</div>
+
+	    <div id="mobile_index_pic" class="mobile_index_pic">
 
 				<img src="<?php echo base_url(); ?>images/ABSG_Nov_2014_SMALL.jpg" srcset="<?php echo base_url(); ?>images/ABSG_Nov_2014_SMALL.jpg 600w, <?php echo base_url(); ?>images/ABSG_Nov_2014_MED.jpg 1200w, <?php echo base_url(); ?>images/ABSG_Nov_2014_LARGE.jpg 1900w, <?php echo base_url(); ?>images/ABSG_Nov_2014_LARGE.jpg 1024w 2x" />
 		</div>
+		This is the website for the <span class='bold'>Abilene Seniors' Magazine</span> which is available at over 200 locations around the Abilene area. 
+
 
 		The heart of our site can be found in by clicking on the SEARCH link in the tab above.  There you'll discover an easy way to find services of interest to seniors and retired folks all through the Big Country.  
 

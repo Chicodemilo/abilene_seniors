@@ -14,7 +14,8 @@
     <script src="<?php echo base_url();?>javascript/jquery-1.10.2.js"></script>
     <script src="<?php echo base_url();?>javascript/jquery-ui-1.10.4.custom.js"></script>
     <script src="https://code.createjs.com/createjs-2015.05.21.min.js"></script>
-    <link rel='stylesheet' media='only screen and (max-width: 1054px)' href='<?php echo base_url();?>css/abilene_seniors_main_small.css'/>
+    <link rel='stylesheet' media='only screen and (max-width: 1054px)' href='<?php echo base_url();?>css/abilene_seniors_main_med.css'/>
+    <link rel='stylesheet' media='only screen and (max-width: 840px)' href='<?php echo base_url();?>css/abilene_seniors_main_small.css'/>
     <script type="text/javascript" src="<?php echo base_url();?>javascript/seniors_javascript.js"></script>
     
     <link rel="stylesheet" href="<?php echo base_url();?>malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css" />

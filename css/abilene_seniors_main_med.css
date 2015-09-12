@@ -217,7 +217,7 @@ a:link {text-decoration: none;}
 
 .index_text     {position:relative;
                 left:1px;
-                width: 80vw;
+                width: 85vw;
                 font-size: 1.1em;
                 height: 800px;}
 
@@ -234,12 +234,13 @@ a:link {text-decoration: none;}
 .index_title_box img {display:none;}
 
 .mobile_index_pic {display:block;
-                  position:relative;
-                  left:-30px;
-                  width:90%;}
+                  width:40%;
+                  margin:35px;
+                  float:left;}
 
-.mobile_index_pic img {width:100%;
+.mobile_index_pic img {width:80vw;
                       border:1px solid black;
+                      width:100%;
                       box-shadow:5px 5px 10px #D5D5D5;}
 /******************* SEARCH & RESULTS PAGE **********************/
 .content_wrapper_search {width: 100%;

@@ -474,11 +474,14 @@
 	</div>
 	<div class="index_text">
 	
-		This is the website for the <span class='bold'>Abilene Seniors' Magazine</span> which is available at over 200 locations around the Abilene area. <br/><br/>The heart of our site can be found in by clicking on the SEARCH link in the tab above.  There you'll discover an easy way to find services of interest to seniors and retired folks all through the Big Country.  
+		This is the website for the <span class='bold'>Abilene Seniors' Magazine</span> which is available at over 200 locations around the Abilene area. 
 		<div id="mobile_index_pic" class="mobile_index_pic">
 
 				<img src="<?php echo base_url(); ?>images/ABSG_Nov_2014_SMALL.jpg" srcset="<?php echo base_url(); ?>images/ABSG_Nov_2014_SMALL.jpg 600w, <?php echo base_url(); ?>images/ABSG_Nov_2014_MED.jpg 1200w, <?php echo base_url(); ?>images/ABSG_Nov_2014_LARGE.jpg 1900w, <?php echo base_url(); ?>images/ABSG_Nov_2014_LARGE.jpg 1024w 2x" />
 		</div>
+
+		The heart of our site can be found in by clicking on the SEARCH link in the tab above.  There you'll discover an easy way to find services of interest to seniors and retired folks all through the Big Country.  
+
 		For example, you'll find listings for... 
             <ul>
                 <li>Retirement and Independent Living Facilities</li> 

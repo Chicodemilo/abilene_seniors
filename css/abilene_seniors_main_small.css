@@ -122,9 +122,9 @@ a:link {text-decoration: none;}
                 background:rgba(255, 255, 255, 0.85);
                 width:100%;
                 font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-                font-size: 2.2em;
+                font-size: 1.5em;
                 box-shadow: 0px 5px 30px #848484;
-                padding-left: 70px;
+                padding-left: 0px;
                 z-index: 45;}
 
 
@@ -149,15 +149,17 @@ a:link {text-decoration: none;}
                               z-index: 39;}
 
 #nav_bar_links_button_svg {float:left;
-                          position:relative;
-                          left:0px;}
+                          position:fixed;
+                          left:-3px;}
 
 .nav_bar_mobile a:link {color: #851C01;}
 .nav_bar_mobile a:visited {color: #851C01;}
 .nav_bar_mobile a:hover   {color: #BF2600;}
 .nav_bar_mobile a:active  {color:#EA2F00; }
 
-.close_x_mobile_svg {cursor:pointer;}
+.close_x_mobile_svg {cursor:pointer;
+                    float:right;
+                    padding:10px;}
 .close_x_mobile_svg polygon {transition: 0.5s;}
 .close_x_mobile_svg:hover polygon {fill:#FC6060;}
 
@@ -170,19 +172,19 @@ a:link {text-decoration: none;}
                   display: block;
                   position:fixed;
                   top:10px;
-                  left:55px;
+                  left:40px;
                   z-index: 41;}
 
-.abilene_logo_box img {width:85vw;}  
+.abilene_logo_box img {width:90vw;}  
 
 .abilene_logo_box_small {z-index: 75;
                         display: block;
                         position:fixed;
                         top:10px;
-                        left:55px;
+                        left:40px;
                         z-index: 41;}
 
-.abilene_logo_box_small img {width:85vw;}    
+.abilene_logo_box_small img {width:90vw;}    
 
 
 
@@ -190,7 +192,7 @@ a:link {text-decoration: none;}
 /******************* INDEX PAGE **********************/
 .content_wrapper    {display:block;
                     position:relative;
-                    top:12vw;}
+                    top:15vw;}
 
 .index_title    {display:none;}
 
@@ -199,7 +201,7 @@ a:link {text-decoration: none;}
 .index_text     {position:relative;
                 left:1px;
                 width: 80vw;
-                font-size: 1.2em;
+                font-size: 1.1em;
                 height: 800px;}
 
 .index_pic      {display:none;}

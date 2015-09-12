@@ -112,26 +112,22 @@ a:link {text-decoration: none;}
 #seniors_canvas     {margin: auto;
                     z-index: 0;
                     position: fixed;
-                    top: 62px;
-                    left: 50%;
+                    top: 0px;
+                    left: 0px;
                     width:100%;
-                    margin-left: -50vw;
                     display: block;
-                    z-index: -30;
-                    display:none;}
+                    z-index: -30;}
 
-.canvas_fade        {height: 400px;
-                    width: 1076px;
+.canvas_fade        {height: 800px;
+                    width: 100%;
                     margin: auto;
                     z-index: 1;
                     position: fixed;
-                    top: 0%;
-                    left: 50%;
-                    background: rgba(255,250,240, .5);
-                    margin-left: -537px;
+                    top: 0px;
+                    left: 0px;
+                    background: rgba(255,250,240, .7);
                     display: block;
-                    z-index: -29;
-                    display:none;}
+                    z-index: -29;}
 
 .under_canvas_fade      {display:none;}
 

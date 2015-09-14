@@ -157,7 +157,7 @@ a:link {text-decoration: none;}
                               position:fixed;
                               top:0px;
                               left:0px;
-                              width:100%;
+                              width:100vw;
                               height:20px;
                               padding:20px;
                               background:rgba(255, 255, 255, .8);

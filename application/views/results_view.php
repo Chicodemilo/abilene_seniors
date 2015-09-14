@@ -55,4 +55,36 @@
 			echo '<div class="pagination_numbers">'.$count.' resource found for: '.$service.'</div>';
 		}
 	 ?>
+	 	<div id="results_mobile">
+		<table class="results_table">
+			
+			<?php 
+			$flipper = 1;      
+			foreach($resources AS $row) { 
+    
+    			if ($flipper == 1){
+            		echo "<tr class='row1'><td><a href='".base_url()."welcome/resource/".$row['id']."'>".$row['name']."</a><br>";
+
+            		if($row['address'] != ""){
+            			echo $row['address'].", ".$row['City'].", ".$row['State'];
+            		}
+
+            		echo "<br>".$row['phone']."</td></tr>";
+            		$flipper = 2;
+        		}else{
+        			echo "<tr class='row2'><td><a href='".base_url()."welcome/resource/".$row['id']."'>".$row['name']."</a><br>";
+
+            		if($row['address'] != ""){
+            			echo $row['address'].", ".$row['City'].", ".$row['State'];
+            		}
+            		
+            		echo "<br>".$row['phone']."</td></tr>";
+            		$flipper = 1;
+        		}
+			}
+			?>
+
+		</table>
+		<div class="scroll_div"></div>
+	</div>
 </div>

@@ -77,7 +77,7 @@ $(document).ready(function() {
     $(window).resize(definitions_resize);
 
 
-    //DEFINITIONS RESULTS BOX RESIZE
+    //BLOG RESULTS BOX RESIZE
     function blog_resize() {
       var bodyheight = $(window).height();
       $("#blog_results").height(bodyheight - 275);

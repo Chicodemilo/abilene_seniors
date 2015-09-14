@@ -728,7 +728,7 @@
 	C1070.151,148.467,1069.733,143.382,1067.437,139.801z"/>
 </svg>
 </div> <!-- ****************************************************************************************************************************** End abilene_logo_small -->
-<div class="abilene_logo_box_small" id="abilene_logo_box_small">
+<div class="abilene_logo_box" id="abilene_logo_box">
     <img src="<?php echo base_url(); ?>/images/logo_mobile.svg" alt="Abilene Seniors Magazine">
 	
 </div>
@@ -751,7 +751,7 @@
 <div class="nav_bar_links_button_banner"></div>
 <div class="nav_bar_links_button" id="nav_bar_links_button">
             <svg version="1.1" id="nav_bar_links_button_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 width="60px" height="90px" viewBox="0 0 140.069 380.217" enable-background="new 0 0 140.069 380.217"
+                 width="40px" height="60px" viewBox="0 0 140.069 380.217" enable-background="new 0 0 140.069 380.217"
                  xml:space="preserve">
             <rect fill="#632700" y="52.525" width="190.069" height="15.54"/>
             <rect fill="#632700" width="190.069" height="15.54"/>

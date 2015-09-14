@@ -38,4 +38,25 @@
 	<br>
 
 	<?php echo $this->pagination->create_links(); ?>
+	<div id="results_mobile">
+		<table class="results_table">
+			
+			<?php 
+			$flipper = 1;      
+			foreach($resources->result() AS $row) { 
+    
+    			if ($flipper == 1){
+            		echo "<tr class='row1'><td><a href='".base_url()."welcome/resource/".$row->id."'>".$row->name."</a><br>".$row->categoryone."<br>".$row->phone."</td></tr>";
+            		$flipper = 2;
+        		}else{
+        			echo "<tr class='row2'><td><a href='".base_url()."welcome/resource/".$row->id."'>".$row->name."</a><br>".$row->categoryone."<br>".$row->phone."</td></tr>";
+            		$flipper = 1;
+        		}
+			}
+			?>
+
+		</table>
+		<div class="scroll_div"></div>
+	</div>
 </div>
+	

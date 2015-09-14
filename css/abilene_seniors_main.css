@@ -594,6 +594,8 @@ a:link {text-decoration: none;}
                              top: 150px;
                              z-index: 30;}
 
+.content_wrapper_blog_mobile {display:none;}
+
 #blog_results      {margin: auto;
                     overflow-x:none;
                     overflow-y: scroll;

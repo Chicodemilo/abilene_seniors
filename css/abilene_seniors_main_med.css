@@ -518,7 +518,7 @@ a:link {text-decoration: none;}
 
 .definitions_text {display:none;}
 
-.definition_box {width:840px;
+.definition_box {width:100vw;
                 margin:auto;}
 
 .definition_title {font-size: 1.1em;

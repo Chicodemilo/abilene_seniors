@@ -39,9 +39,10 @@
     </div>
 </div>
 <div class="content_wrapper_definitions_mobile">
-    <div class="definitions_text">There are tons of terms in the Senior Care industry... it can be dificult to know what you should be looking for. <br>Spend a few minutes reading these definitions and you'll soon know the difference between things like 'Assisted Living', 'Skilled Nursing', and 'Independent Living.'</div>
+    
     <div id="definitions_results">
         <div id="definition_box" class="definition_box">
+            <div class="definitions_text">There are tons of terms in the Senior Care industry... it can be dificult to know what you should be looking for. <br><br>Spend a few minutes reading these definitions and you'll soon know the difference between things like 'Assisted Living', 'Skilled Nursing', and 'Independent Living.'</div>
             <h2 class="definition_title">Alzheimer&#8217;s or Memory Care Facility </h2>
             <div class="definition_description"><a href="<?php echo base_url();?>welcome/results?need=ALZHEIMERS+CARE">Alzheimer&#8217;s or Memory Care Facility</span></a> is a 24-hour licensed long-term care skilled nursing facility that provides room, board, and memory care services to seniors challenged by memory loss.</div>
             <hr>

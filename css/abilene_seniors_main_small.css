@@ -112,7 +112,7 @@ a:link {text-decoration: none;}
 #seniors_canvas     {margin: auto;
                     z-index: 0;
                     position: fixed;
-                    top: 20px;
+                    top: 61px;
                     left: 0px;
                     width:100%;
                     display: block;
@@ -208,17 +208,20 @@ a:link {text-decoration: none;}
 /******************* INDEX PAGE **********************/
 .content_wrapper    {display:block;
                     position:relative;
+                    width:100vw;
                     top:13vw;}
 
 .index_title    {display:none;}
 
-.index_title img {width:90vw;}
+.index_title img {width:85vw;}
 
 .index_text     {position:relative;
                 left:1px;
-                width: 80vw;
+                width: 85vw;
                 top:50px;
+                margin:auto;
                 font-size: 1.1em;
+                text-align: justify;
                 height: 800px;}
 
 .index_pic      {display:none;}
@@ -421,7 +424,12 @@ a:link {text-decoration: none;}
 .contact_box_b             {display:none;}
 
 .contact_box_b_mobile {display:block;}
-.contact_brown    {background: rgba(222, 208, 196, .9);}
+.contact_brown    {background: rgba(222, 208, 196, .9);
+                  position:absolute;
+                  top:80px;
+                  left:0px;
+                  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                  width: 100vw;}
 
 .contact_table td   {height:57px;
                     border: none;
@@ -433,12 +441,14 @@ a:link {text-decoration: none;}
 .contact_table {border-collapse: collapse;}
 
 .contact_brown input[type=text] {height: 40px;
+                                width:90vw;
                                 border:none;
                                 border-radius: 7px;
                                 font-size: 1em;}
 
 .contact_brown textarea {height: 100px;
                         border:none;
+                        width:90vw;
                         border-radius: 7px;
                         font-size: 1em;}
 

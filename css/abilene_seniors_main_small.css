@@ -14,7 +14,7 @@ hr {border: 0;
     background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
     background-image:      -o-linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); }
 
-#wrapper    {}
+#wrapper    {width:100vw;}
 
 .med_title  {display:none;}
 
@@ -418,24 +418,10 @@ a:link {text-decoration: none;}
 
 /******************* CONTACT PAGE **********************/
 
-.contact_box_b             {width: 1100px;
-                            margin: auto;
-                            position: fixed;
-                            padding-top: 15px;
-                            top: 125px;
-                            z-index: 35;}
+.contact_box_b             {display:none;}
 
-
-.contact_brown    {margin: auto;
-                  position:relative;
-                  left:150px;
-                  width: 800px;
-                  background: -webkit-linear-gradient(left, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .0)); /* For Safari 5.1 to 6.0 */
-                  background: -o-linear-gradient(left, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .0)); /* For Opera 11.1 to 12.0 */
-                  background: -moz-linear-gradient(left, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .0)); /* For Firefox 3.6 to 15 */
-                  background: linear-gradient(to left, rgba(222, 208, 196, .0), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .7), rgba(222, 208, 196, .0)); /* Standard syntax (must be last) */
-                  padding: 5px;
-                  margin: 0;}
+.contact_box_b_mobile {display:block;}
+.contact_brown    {background: rgba(222, 208, 196, .9);}
 
 .contact_table td   {height:57px;
                     border: none;
@@ -444,18 +430,17 @@ a:link {text-decoration: none;}
 #border_top {border-top:3px solid rgb(252, 246, 241);}
 #border_bottom {border-bottom:3px solid rgb(252, 246, 241);}
 
-.contact_table {width:100%;
-                border-collapse: collapse;}
+.contact_table {border-collapse: collapse;}
 
 .contact_brown input[type=text] {height: 40px;
                                 border:none;
                                 border-radius: 7px;
-                                font-size: 1.1em;}
+                                font-size: 1em;}
 
 .contact_brown textarea {height: 100px;
                         border:none;
                         border-radius: 7px;
-                        font-size: 1.2em;}
+                        font-size: 1em;}
 
 .send_button            {height: 40px;
                         border-radius: 17px;

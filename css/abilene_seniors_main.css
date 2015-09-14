@@ -489,7 +489,7 @@ a:link {text-decoration: none;}
                             padding-top: 15px;
                             top: 125px;
                             z-index: 35;}
-
+.contact_box_b_mobile {display:none;}
 
 .contact_brown    {margin: auto;
                   position:relative;

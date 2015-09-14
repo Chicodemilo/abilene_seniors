@@ -471,32 +471,31 @@ a:link {text-decoration: none;}
 
 
 /******************* DEFINITONS **********************/
-.content_wrapper_definitions {width: 1000px;
-                             margin: auto;
-                             position: relative;
-                             top: 150px;
-                             z-index: 30;}
+.content_wrapper_definitions {display:none;}
+
+.content_wrapper_definitions_mobile {width: 100vw;
+                                     margin: auto;
+                                     position: relative;
+                                     display:block;
+                                     top: 20px;
+                                     z-index: 30;}
 
 #definitions_results    {margin: auto;
                 overflow-x:none;
                 overflow-y: scroll;
                 border: 1px solid rgb(180, 180, 180);
-                width: 970px;
+                width: 100vw;
                 display: block;
-                position: fixed;
-                top: 230px;
-                padding: 15px;
+                position: absolute;
+                top: 30px;
+                padding: 0px;
                 background: white;
                 border-radius: 10px;
                 box-shadow: 0px 0px 30px rgb(210,180,140);}
 
-.definitions_text {width:870px;
-                  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-                  font-weight: bold;
-                  color:#522000;
-                  margin-left: 75px;}
+.definitions_text {display:none;}
 
-.definition_box {width:840px;
+.definition_box {width:100vw;
                 margin:auto;}
 
 .definition_title {font-size: 1.1em;
@@ -508,8 +507,9 @@ a:link {text-decoration: none;}
                     margin-bottom: 10px;
                     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
 .definition_description {display:block;
+                        text-align: justify;
                         margin:auto;
-                        width:90%;}
+                        width:85%;}
 
 
 

@@ -125,7 +125,7 @@ a:link {text-decoration: none;}
                     position: fixed;
                     top: 0px;
                     left: 0px;
-                    background: rgba(255,250,240, .5);
+                    background: rgba(255,250,240, .6);
                     display: block;
                     z-index: -29;}
 
@@ -218,7 +218,8 @@ a:link {text-decoration: none;}
                 left:1px;
                 top:65px;
                 width: 85vw;
-                font-size: 1.1em;
+                font-size: 1.2em;
+                line-height: 1.4em;
                 height: 800px;}
 
 .index_pic      {display:none;}
@@ -230,7 +231,7 @@ a:link {text-decoration: none;}
 .index_title_box img {display:none;}
 
 .mobile_index_pic {display:block;
-                  width:42%;
+                  width:40%;
                   margin:35px;
                   margin-top: 0px;
                   float:left;}

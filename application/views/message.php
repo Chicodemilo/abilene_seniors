@@ -32,9 +32,9 @@
                 <tr id="border_top"><td class="righter">What is <?php echo $first_num." "; ?>plus <?php echo $next_num; ?>: </td><td>
                         <input type="text" maxlength="2" size="3" name="mr_robot">
                                <?php if($wrong_ans == true){
-                                    echo "<span class='lefter_light'>&nbsp &#60;&#60; You answered this wrong last time!?!</span>";
+                                    echo "<span class='lefter_light'>&nbsp  You answered this wrong last time!?!</span>";
                                     }else{
-                                      echo "<span class='lefter_light'>&nbsp &#60;&#60; this is to prove you're not a robot</span>";
+                                      echo "<span class='lefter_light'>&nbsp this is to prove you're not a robot</span>";
                                     }
                                 ?>
                                </td></tr>
@@ -81,9 +81,9 @@
                 <tr id="border_top"><td>What is <?php echo $first_num." "; ?>plus <?php echo $next_num; ?>: <br>
                         <input type="text" maxlength="2" size="3" name="mr_robot"><br>
                                <?php if($wrong_ans == true){
-                                    echo "<span class='lefter_light'>&nbsp &#60;&#60; You answered this wrong last time!?!</span>";
+                                    echo "<span class='lefter_light'>&nbspYou answered this wrong last time!?!</span>";
                                     }else{
-                                      echo "<span class='lefter_light'>&nbsp &#60;&#60; this is to prove you're not a robot</span>";
+                                      echo "<span class='lefter_light'>&nbspthis is to prove you're not a robot</span>";
                                     }
                                 ?>
                                </td></tr>

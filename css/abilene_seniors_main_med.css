@@ -257,7 +257,7 @@ a:link {text-decoration: none;}
             top:140px;
             text-align: left;}
 
-.search_bar_no_hover   {width: 55%;
+.search_bar_no_hover   {width: 65%;
                        padding: 5px;
                        font-size: 16px;
                        border:none;
@@ -455,6 +455,7 @@ a:link {text-decoration: none;}
                   width: 100vw;}
 
 .contact_table td   {height:57px;
+                    padding-bottom: 15px;
                     border: none;
                     padding:5px;}
 

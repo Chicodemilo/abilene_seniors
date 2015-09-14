@@ -248,14 +248,14 @@ a:link {text-decoration: none;}
                         z-index: 30;}
 
 .search_bar {margin: auto;
-            width: 100%;
+            width: 100vw;
             background: rgba(222, 208, 196, .5);
             padding: 15px;
             position: fixed;
             top:150px;
             text-align: left;}
 
-.search_bar_no_hover   {width: 65%;
+.search_bar_no_hover   {width: 55%;
                        padding: 5px;
                        font-size: 16px;
                        border:none;
@@ -353,13 +353,7 @@ a:link {text-decoration: none;}
                 font-size: 1.3em;
                 padding:4px;}
 
-.pagination_numbers {margin: auto;
-                    font-size: 1.4em;
-                    height: 20px;
-                    margin-left: 30px;
-                    display: block;
-                    position: absolute;
-                    top: 0px;}
+.pagination_numbers {display:none;}
 
 .no_resource {margin: auto;
              text-align: center;

@@ -250,14 +250,14 @@ a:link {text-decoration: none;}
                         z-index: 30;}
 
 .search_bar {margin: auto;
-            width: 100%;
+            width: 100vw;
             background: rgba(222, 208, 196, .7);
             padding: 15px;
             position: fixed;
             top:105px;
             text-align: left;}
 
-.search_bar_no_hover   {width: 65%;
+.search_bar_no_hover   {width: 55%;
                        padding: 5px;
                        font-size: 16px;
                        border:none;

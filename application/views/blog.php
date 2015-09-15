@@ -33,13 +33,6 @@
     </div>
 </div>
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        var active_year = <?php echo $year ?>;
-        var bold_it = $('#<?php echo $year ?>');
-        bold_it.css('font-weight', 'bolder');
-    });
-</script>
 <div class="content_wrapper_blog_mobile">
     <div id="blog_results">
     <?php

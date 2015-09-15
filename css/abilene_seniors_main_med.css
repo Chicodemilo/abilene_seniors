@@ -562,10 +562,10 @@ a:link {text-decoration: none;}
 .blog_box   {width:97%;
             margin:auto;}
 
-.blog_box img {width:50%;
-              margin:auto;
+.blog_box img {width:47%;
               float:right;
-              margin-bottom: 5px;}
+              margin-bottom: 5px;
+              margin-left: 10px;}
 
 .blog_body  {width:90%;
             margin:auto;

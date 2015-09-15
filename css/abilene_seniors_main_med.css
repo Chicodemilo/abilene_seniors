@@ -537,36 +537,41 @@ a:link {text-decoration: none;}
 
 
 /******************* BLOG **********************/
-.content_wrapper_blog {width: 1000px;
+.content_wrapper_blog {display:none;}
+
+.content_wrapper_blog_mobile {width: 100vw;
+                             display:block;
                              margin: auto;
                              position: relative;
-                             top: 150px;
+                             top: 50px;
                              z-index: 30;}
 
 #blog_results      {margin: auto;
                     overflow-x:none;
                     overflow-y: scroll;
                     border: 1px solid rgb(180, 180, 180);
-                    width: 970px;
+                    width: 100vw;
                     display: block;
-                    position: fixed;
-                    top: 170px;
-                    padding: 15px;
+                    position: absolute;
+                    top: 10.5vw;
+                    padding: 0px;
                     background: white;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     box-shadow: 0px 0px 30px rgb(210,180,140);}
 
-.blog_box   {width:80%;
+.blog_box   {width:97%;
             margin:auto;}
 
 .blog_box img {width:50%;
-              float: right;
-              margin-left: 20px;
+              margin:auto;
+              float:right;
               margin-bottom: 5px;}
 
 .blog_body  {width:90%;
             margin:auto;
             text-align: justify;
+            font-size: 1.2em;
+            line-height: 1.5em;
             text-justify: inter-word;
             padding-bottom: 150px;}
 
@@ -576,7 +581,7 @@ a:link {text-decoration: none;}
 .blog_title a:hover {color:#BD9A60;}
 .blog_title a:active {color:#A96F23;}
 
-.blog_title {font-size: 1.5em;
+.blog_title {font-size: 1.65em;
              font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
             color:#E6C299;}
 
@@ -586,11 +591,17 @@ a:link {text-decoration: none;}
              font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
 
 .blog_years {margin: auto;
-            height: 20px;
+            height: 30px;
+            padding:5px;
+            padding-left: 20px;
+            width:100vw;
+            border-top:1px dotted gray;
+            background:rgba(255, 255, 255, 0.85);
             margin-left: 30px;
             display: block;
             position: fixed;
-            bottom: 42px;}
+            left:-30px;
+            bottom: 0px;}
 
 /******************* FOOTER **********************/                    
 #footer_scroll {display:none;}

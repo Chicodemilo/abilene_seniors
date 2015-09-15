@@ -534,7 +534,7 @@ a:link {text-decoration: none;}
                     top: 50px;
                     padding: 5px;
                     background: white;
-                    border-radius: 10px;
+                    border-radius: 0px;
                     box-shadow: 0px 0px 30px rgb(210,180,140);}
 
 .blog_box   {width:97%;
@@ -547,6 +547,8 @@ a:link {text-decoration: none;}
 .blog_body  {width:90%;
             margin:auto;
             text-align: justify;
+            font-size: 1.2em;
+            line-height: 1.5em;
             text-justify: inter-word;
             padding-bottom: 150px;}
 
